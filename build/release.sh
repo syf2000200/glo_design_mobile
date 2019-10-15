@@ -21,10 +21,6 @@ then
 
   # publish
   git push origin master
-  git push origin refs/tags/v$VERSION
-  git checkout develop
-  git rebase master
-  git push origin develop
 
   npm publish
 fi
