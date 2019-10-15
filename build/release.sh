@@ -16,7 +16,7 @@ then
 
   # commit
   git tag v$VERSION
-  npm run changelog
+  # npm run changelog
   git commit -am "release: $VERSION"
 
   # publish
