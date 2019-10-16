@@ -8,7 +8,7 @@
 <!-- {.md} -->
 
 ```
-npm install gc-demo --save
+npm install gc-components-mobile --save
 ```
 <!-- {.md} -->
 
@@ -16,19 +16,19 @@ npm install gc-demo --save
 <!-- {.md} -->
 
 ```js
-import GcDemo from 'gc-demo' // 引入组件库
+import GcMobile from 'gc-components-mobile' // 引入组件库
 ```
 <!-- {.md} -->
 
 引入<!-- {.md} -->`px`或者`vw`布局样式
 
 ```js
-import 'gc-demo/lib/theme-chalk/index.px.css' // px单位，适用于pc端布局
-import 'gc-demo/lib/theme-chalk/index.vw.css' // vw单位，适用于移动端布局
+import 'gc-components-mobile/lib/theme-chalk/index.px.css' // px单位，适用于pc端布局
+import 'gc-components-mobile/lib/theme-chalk/index.vw.css' // vw单位，适用于移动端布局
 ```
 最后，全局使用组件库<!-- {.md} -->
 ```js
-Vue.use(GcDemo)
+Vue.use(GcMobile)
 ```
 <!-- {.md} -->
 
@@ -40,7 +40,7 @@ Vue.use(GcDemo)
 
 ```js
 
-import { BaseCard } from 'GcDemo'
+import { BaseCard } from 'gc-components-mobile'
 
 Vue.use(BaseCard)
 

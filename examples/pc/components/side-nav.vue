@@ -61,28 +61,30 @@ export default {
       display: block;
       position: relative;
       padding: 8px 24px;
-      color: #348ad3;
+      color: rgba(0,0,0,.55);
       font-weight: normal;
       line-height: 1.5;
       cursor: pointer;
+      &:hover{
+        color: #348ad3;
+      }
     }
     .side-nav-group {
       display: block;
       position: relative;
       padding: 6px 0 6px 24px;
-      color: #2c405a;
+      color: rgba(0,0,0,.75);
       font-weight: bold;
     }
     .slid-nav-component {
       display: block;
       position: relative;
       padding: 6px 24px 6px 32px;
-      color: #616367;
+      color: rgba(0,0,0,.55);
       font-size: 14px;
     }
     .active {
-      color: #628cf5;
-      font-weight: bold;
+      color: #348ad3;
     }
   }
 }

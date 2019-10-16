@@ -6,7 +6,7 @@ const signale = require('signale')
 
 const { Signale } = signale
 const tasks = [
-  'bootstrap',
+  'theme',
   'lint',
   'clean',
   'build:entry',

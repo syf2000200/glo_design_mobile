@@ -4,13 +4,15 @@ import BaseCard from './base-card'
 import Button from './button'
 import Icon from './icon'
 import Loading from './loading'
+import NavBar from './nav-bar'
 import TextCard from './text-card'
-const version = '0.0.14'
+const version = '0.0.15'
 const components = [
   BaseCard,
   Button,
   Icon,
   Loading,
+  NavBar,
   TextCard
 ]
 const install = Vue => {
@@ -29,6 +31,7 @@ export {
   Button,
   Icon,
   Loading,
+  NavBar,
   TextCard
 }
 export default {
