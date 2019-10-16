@@ -5,7 +5,7 @@
       <div class="refresh" @click="refreshIFrame"></div>
     </div>
     <div class="iframe-wrap">
-      <iframe :src="baseUrl+'mobile.html#/index'" id="mobileIframe" frameborder="0"></iframe>
+      <iframe :src="baseUrl+'mobile.html#/'+currentName" id="mobileIframe" frameborder="0"></iframe>
     </div>
     <!-- <gc-icon
       name="close"
@@ -16,16 +16,18 @@
   </div>
 </template>
 <script>
+import Nav from '../../nav.config.json'
 export default {
   data () {
     return {
+      currentName: '',
       baseUrl: `${window.location.origin}${window.location.pathname}`,
       baseOrigin: `${window.location.origin}`
     }
   },
   props: {
     url: String,
-    show: Boolean
+    show: Boolean,
   },
   methods: {
     refreshIFrame () {
@@ -34,7 +36,29 @@ export default {
     openMobileWindow () {
       window.open(this.baseUrl + 'mobile.html#/index')
     }
-  }
+  },
+  mounted() {
+  },
+  watch: {
+    $route (to, from) {
+      const newArr = []
+      
+      Nav['组件'].forEach(element => {
+        for(let i=0; i<element.items.length; i++) {
+          newArr.push(element.items[i].name)
+        }
+      });
+      for(let i=0; i<newArr.length; i++) {
+        if(newArr[i] == to.name) {
+          this.currentName = to.name
+          return
+        }
+        else {
+          this.currentName = 'index'
+        }
+      }
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>

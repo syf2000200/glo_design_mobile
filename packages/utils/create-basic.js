@@ -30,13 +30,13 @@ function defaultProps (props) {
   })
 }
 
-export default function (sfc) {
-  sfc.name = 'gc-' + sfc.name
-  sfc.install = sfc.install || install
-  sfc.mixins = sfc.mixins || []
-  sfc.mixins.push(bem)
-  sfc.methods = sfc.methods || {}
-  sfc.methods.isDef = isDef
-  sfc.props && defaultProps(sfc.props)
-  return sfc
+export default function (syf) {
+  syf.name = 'gc-' + syf.name
+  syf.install = syf.install || install
+  syf.mixins = syf.mixins || []
+  syf.mixins.push(bem)
+  syf.methods = syf.methods || {}
+  syf.methods.isDef = isDef
+  syf.props && defaultProps(syf.props)
+  return syf
 }

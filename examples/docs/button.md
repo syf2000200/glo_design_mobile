@@ -8,12 +8,12 @@
 <!-- {.md} -->
 
 方式一：<!-- {.md} -->
-通过<!-- {.md} -->`gc-icon`标签来引用
+通过<!-- {.md} -->`gc-button`标签来引用
 
 ::: demo
 
 ```html
-<gc-icon name="cards-playing-outline" :size="16"></gc-icon>
+<gc-button></gc-button>
 <gc-icon name="cards" :size="16"></gc-icon>
 <gc-icon name="close" :size="16"></gc-icon>
 ```
@@ -22,7 +22,7 @@
 
 
 
-## Attributes
+## API
 <!-- {.md} -->
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |

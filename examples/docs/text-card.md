@@ -14,8 +14,6 @@
 
 <!-- {.md} -->
 
-<text-demo></text-demo>
-
 ::: demo
 
 ```html

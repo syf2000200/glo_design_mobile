@@ -15,7 +15,7 @@ const ghpages = require('gh-pages')
 execSync('npm run build:docs')
 ghpages.publish('dist', {
   user: {
-    name: 'sunyafei',
+    name: 'syf2000200',
     email: 'sunyf-c@glodon.com'
   },
   repo: 'http://10.1.83.101:8181/syf2000200/gc_components_demo.git',

@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <span class="docs-trans docs-demo__triangle" @click="toggle">{{isExpand ? '隐藏代码' : '显示代码'}}</span>
+    <!-- <span class="docs-trans docs-demo__triangle" @click="toggle">{{isExpand ? '隐藏代码' : '显示代码'}}</span> -->
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import Vue from 'vue'
 export default {
   data() {
     return {
-      isExpand: false
+      // isExpand: false
     }
   },
   methods: {
@@ -42,7 +42,6 @@ export default {
   font-size: 14px;
   background-color: #f7f7f7;
   border: 1px solid #e2ecf4;
-  border-top: none;
   pre code {
     font-family: Consolas, Menlo, Courier, monospace;
     line-height: 22px;

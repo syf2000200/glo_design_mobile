@@ -30,15 +30,12 @@ export default {
   name: 'app',
   data () {
     return {
-      isMobileShow: false
+      isMobileShow: false,
+      currentName: null,
     }
   },
-  watch: {
-    $route (to, from) {
-      // if (to.path === '/') {
-      //   router.push({ name: 'introduce' })
-      // }
-    }
+  
+  created() {
   },
   mounted () {
     if ('onhashchange' in window) {

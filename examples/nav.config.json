@@ -32,6 +32,18 @@
       "isMobile": "1",
       "items": [
         {
+          "desc": "Button 按鈕",
+          "name": "button",
+          "isMobile": "1",
+          "path": "/button"
+        }
+      ]
+    },
+    {
+      "desc": "基础组件",
+      "isMobile": "1",
+      "items": [
+        {
           "desc": "Icon 图标",
           "name": "icon",
           "isMobile": "1",
@@ -44,10 +56,34 @@
       "isMobile": "1",
       "items": [
         {
+          "desc": "Text 基础卡片",
+          "isMobile": "1",
+          "name": "text-card",
+          "path": "/text-card"
+        }
+      ]
+    },
+    {
+      "desc": "卡片组件",
+      "isMobile": "1",
+      "items": [
+        {
           "desc": "Base 基础卡片",
           "isMobile": "1",
           "name": "base-card",
           "path": "/base-card"
+        }
+      ]
+    },
+    {
+      "desc": "基础组件",
+      "isMobile": "1",
+      "items": [
+        {
+          "desc": "Loading 加载",
+          "name": "loading",
+          "isMobile": "1",
+          "path": "/loading"
         }
       ]
     }
