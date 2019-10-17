@@ -37,9 +37,3 @@ export default create({
 })
 </script>
 
-<style scoped>
-.gc-button {
-  padding: 0 10px;
-  background: #cccccc;
-}
-</style>

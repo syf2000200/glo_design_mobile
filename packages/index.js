@@ -6,7 +6,7 @@ import Icon from './icon'
 import Loading from './loading'
 import NavBar from './nav-bar'
 import TextCard from './text-card'
-const version = '0.0.15'
+const version = '0.0.16'
 const components = [
   BaseCard,
   Button,

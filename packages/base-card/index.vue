@@ -36,7 +36,7 @@ export default create({
   },
   components: {
     VcLoading,
-    VcChatIcon
+    VcChatIcon,
   }
 })
 </script>
