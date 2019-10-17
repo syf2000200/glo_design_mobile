@@ -33,7 +33,7 @@ export default {
 <style lang="scss">
 .demo-container {
   transition: max-height 0.3s ease;
-  overflow: hidden;
+  margin: 20px 0;
 }
 .docs-demo {
   width: 100%;
@@ -42,6 +42,7 @@ export default {
   font-size: 14px;
   background-color: #f7f7f7;
   border: 1px solid #e2ecf4;
+  border-radius: 4px;
   pre code {
     font-family: Consolas, Menlo, Courier, monospace;
     line-height: 22px;

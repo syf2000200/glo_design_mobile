@@ -44,7 +44,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .mobile-demo-menu {
-  background-color: #fafafa;
   min-height: 100vh;
   padding: 10px 10px;
   &__title {

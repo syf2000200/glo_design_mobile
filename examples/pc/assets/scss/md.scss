@@ -17,7 +17,7 @@ section.view {
     border-radius: 4px 4px 0 0;
     background-color: #fff;
     margin-top: 16px;
-    .demo-card {
+    .demo-wrap {
       margin-right: 50px;
       margin-bottom: 20px;
       display: inline-block;
@@ -45,7 +45,7 @@ section.view {
     font-size: 14px;
   }
   h1.md {
-    font-size: 24px;
+    font-size: 26px;
   }
   h1.md,
   h2.md,
@@ -66,6 +66,7 @@ section.view {
   }
   h2.md {
     font-size: 18px;
+    font-weight: normal;
   }
   .task-list {
     margin: 16px 0;
@@ -110,7 +111,6 @@ section.view {
     padding: 0 .5em;
   }
   table.table {
-    display: block;
     width: 100%;
     background-color: #fff;
     color: #5e6d82;
@@ -120,13 +120,13 @@ section.view {
     margin-bottom: 50px;
     th {
       border-top: 1px solid #f3f7fa;
-      background-color: #FAFBFC;
+      background-color: #F7F7F7;
       border-bottom: 1px solid #f3f7fa;
       padding: 10px 8px;
     }
     td {
-      border-top: 1px solid #f3f7fa;
-      border-bottom: 1px solid #f3f7fa;
+      border-top: 1px solid #e2ecf4;
+      border-bottom: 1px solid #e2ecf4;
       padding: 10px 8px;
     }
   }

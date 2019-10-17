@@ -32,6 +32,19 @@ Vue.use(GcMobile)
 ```
 <!-- {.md} -->
 
+在模板中，用<!-- {.md} --> `<gc-base></gc-base>` 自定义标签的方式使用组件
+
+```html
+<template>
+  <div>
+    <gc-base>这是一个基础卡片</gc-base>
+  </div>
+</template>
+```
+<!-- {.md} -->
+
+<!-- {.md} -->
+
 ## 单个组件按需使用
 <!-- {.md} -->
 
@@ -47,14 +60,23 @@ Vue.use(BaseCard)
 ```
 <!-- {.md} -->
 
-在模板中，用<!-- {.md} --> `<gc-base></gc-base>` 自定义标签的方式使用组件
+在模板中，用首先注册引用的组件，然后以自定义标签的方式使用组件
 
 ```html
 <template>
   <div>
-    <gc-base>这是一个基础卡片</gc-base>
+    <BaseCard>这是一个基础卡片</BaseCard>
   </div>
 </template>
+```
+```js
+<script>
+  export default {
+    components: {
+      BaseCard,
+    }
+  }
+</script>
 ```
 <!-- {.md} -->
 

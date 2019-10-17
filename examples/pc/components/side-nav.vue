@@ -41,6 +41,7 @@ export default {
   padding: 0;
   color: #348ad3;
   background-color: #fff;
+  border-right: 1px solid #e2ecf4;
   z-index: 99;
   .group-container {
     margin-bottom: 32px;
@@ -51,7 +52,6 @@ export default {
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    opacity: 0.8;
   }
   .side-nav-items {
     font-size: 14px;
@@ -73,15 +73,14 @@ export default {
       display: block;
       position: relative;
       padding: 6px 0 6px 24px;
-      color: rgba(0,0,0,.75);
-      font-weight: bold;
+      color: rgba(0,0,0,.55);
     }
     .slid-nav-component {
       display: block;
       position: relative;
-      padding: 6px 24px 6px 32px;
-      color: rgba(0,0,0,.55);
-      font-size: 14px;
+      padding: 10px 24px 10px 38px;
+      color: rgba(0,0,0,.45);
+      font-size: 13px;
     }
     .active {
       color: #348ad3;

@@ -67,8 +67,8 @@ export default {
   top: 10px;
   right: 15px;
   z-index: 999;
-  background-color: #fafafa;
-  box-shadow: 0px 0px 23px 1px #CCCCCC;
+  border: 1px solid #e2ecf4;
+  border-radius: 4px;
   &__close {
     position: absolute;
     bottom: -40px;
@@ -91,7 +91,7 @@ export default {
       left: 50%;
       // margin-left: -80px;
       transform: translateX(-50%);
-      top: 23px;
+      top: 28px;
       font-weight: bold;
       cursor: pointer;
     }
@@ -99,8 +99,8 @@ export default {
       position: absolute;
       width: 20px;
       height: 20px;
-      right: 10px;
-      top: 24px;
+      right: 14px;
+      top: 28px;
       cursor: pointer;
     }
   }
@@ -108,6 +108,7 @@ export default {
     width: 375px;
     height: 812px;
     padding-bottom: 20px;
+    background-color: #f5f5f9;
     iframe {
       height: 100%;
       width: 100%;

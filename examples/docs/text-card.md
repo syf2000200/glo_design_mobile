@@ -17,10 +17,10 @@
 ::: demo
 
 ```html
-<gc-text class="demo-card" message="这是卡片内容"></gc-text>
+<gc-text class="demo-wrap" message="这是卡片内容"></gc-text>
 
 <gc-text
-  class="demo-card"
+  class="demo-wrap"
   theme-type="primary"
   message="这是卡片内容"
 ></gc-text>
