@@ -3,11 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import GcDemo from '../../packages/index'
+import GcMobile from '../../packages/index'
 // import '../lib/theme-chalk/index.css'
 // import '../../packages/theme-chalk/lib/index.vw.css'
 
-Vue.use(GcDemo)
+Vue.use(GcMobile)
 
 Vue.config.productionTip = false
 

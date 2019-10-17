@@ -20,7 +20,7 @@
     "clean": "rimraf lib && rimraf packages/*/lib",
     "dev:style": "gulp --gulpfile packages/theme-chalk/gulpfile.js",
     "build:docs": "vue-cli-service build",
-    "build:entry": "node build/build-entry.js ",
+    "build:entry": "node build/build-entry.js",
     "build:lib": "node build/build-lib.js ",
     "build:style": "gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "publish:docs": "node build/publish-docs.js",

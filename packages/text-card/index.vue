@@ -5,6 +5,7 @@
     </div>
   </base-card>
 </template>
+
 <script>
 import create from '../utils/create'
 export default create({

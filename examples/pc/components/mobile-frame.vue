@@ -105,8 +105,8 @@ export default {
     }
   }
   .iframe-wrap {
-    width: 320px;
-    height: 516px;
+    width: 375px;
+    height: 812px;
     padding-bottom: 20px;
     iframe {
       height: 100%;

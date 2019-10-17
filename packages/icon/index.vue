@@ -6,6 +6,7 @@
     <i v-else class="gc-icon__font" :class="'vc-icon-' + name" :style="{ color: color }"></i>
   </span>
 </template>
+
 <script>
 import './iconfont.js'
 import create from '../utils/create-basic'

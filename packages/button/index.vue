@@ -17,6 +17,7 @@
     <slot></slot>
   </div>
 </template>
+
 <script>
 import create from '../utils/create-basic'
 export default create({
@@ -35,3 +36,10 @@ export default create({
   }
 })
 </script>
+
+<style scoped>
+.gc-button {
+  padding: 0 10px;
+  background: #cccccc;
+}
+</style>

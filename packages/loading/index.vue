@@ -26,6 +26,7 @@
     </svg>
   </div>
 </template>
+
 <script>
 import create from '../utils/create-basic'
 const DEFAULT_COLOR = '#2150D8'

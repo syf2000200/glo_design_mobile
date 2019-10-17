@@ -3,7 +3,7 @@
     <ul class="icon-list">
       <li v-for="name in icons" :key="name">
         <div class="demo-icon-wrap">
-          <gc-icon :name="name.substring(5)" :size="32"></gc-icon>
+          <gc-icon :name="name.substring(5)" :size="12"></gc-icon>
           <span class="name">{{name.substring(5)}}</span>
         </div>
       </li>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-var iconList = require('../icon.json')
+let iconList = require('../icon.json')
 
 export default {
   name: 'icon-demo',
@@ -35,7 +35,7 @@ export default {
 }
 .icon-list li {
   float: left;
-  width: 16.66%;
+  width: 33.333%;
   text-align: center;
   height: 120px;
   line-height: 120px;
