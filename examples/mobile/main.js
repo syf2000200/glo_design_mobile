@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import GcMobile from '../../packages/index'
 // import '../lib/theme-chalk/index.css'
-// import '../../packages/theme-chalk/lib/index.vw.css'
+import '../../packages/theme-chalk/lib/index.vw.css'
 
 Vue.use(GcMobile)
 
