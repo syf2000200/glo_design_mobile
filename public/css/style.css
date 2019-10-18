@@ -318,9 +318,8 @@ blockquote {
 	float: left;
 }
 #firstPage .left h1 {
-	font-size: 70px;
+	font-size: 90px;
     color: #000000;
-    font-weight: bold;
 }
 #firstPage .left p{
 	font-size: 18px;
@@ -338,7 +337,6 @@ blockquote {
     background: linear-gradient(135deg,rgba(108,193,255,1) 0%,rgba(0,129,204,1) 100%);
     border-radius: 4px;
     text-align: center;
-    text-decration: none;
 	cursor: pointer;
 	position: relative;
     z-index: 99;
@@ -509,10 +507,11 @@ blockquote {
 
 .header {
 	position: fixed;
-	width: 100%;
+	width: 80%;
 	left: 0;
 	top: 0;
 	z-index: 999;
+	padding: 0 10%;
 }
 .header .logo {
 	margin: 20px;
