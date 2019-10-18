@@ -5,7 +5,7 @@
       <div class="refresh" @click="refreshIFrame"></div>
     </div>
     <div class="iframe-wrap">
-      <iframe :src="baseUrl+'mobile.html#/'+currentName" id="mobileIframe" frameborder="0"></iframe>
+      <iframe :src="baseOrigin+'/mobile.html#/'+currentName" id="mobileIframe" frameborder="0"></iframe>
     </div>
     <!-- <gc-icon
       name="close"
@@ -38,6 +38,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this.baseOrigin)
   },
   watch: {
     $route (to, from) {

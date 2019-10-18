@@ -8,7 +8,7 @@
 <!-- {.md} -->
 
 ```
-npm install gc-components-mobile --save
+npm install gc-components-mobile
 ```
 <!-- {.md} -->
 
@@ -16,7 +16,7 @@ npm install gc-components-mobile --save
 <!-- {.md} -->
 
 ```js
-import GcMobile from 'gc-components-mobile' // 引入组件库
+import gc from 'gc-components-mobile' // 引入组件库
 ```
 <!-- {.md} -->
 
@@ -26,18 +26,18 @@ import GcMobile from 'gc-components-mobile' // 引入组件库
 import 'gc-components-mobile/lib/theme-chalk/index.px.css' // px单位，适用于pc端布局
 import 'gc-components-mobile/lib/theme-chalk/index.vw.css' // vw单位，适用于移动端布局
 ```
-最后，全局使用组件库<!-- {.md} -->
+最后全局调用组件库<!-- {.md} -->
 ```js
-Vue.use(GcMobile)
+Vue.use(gc)
 ```
 <!-- {.md} -->
 
-在模板中，用<!-- {.md} --> `<gc-base></gc-base>` 自定义标签的方式使用组件
+在模板中，以<!-- {.md} --> `<gc-base></gc-base>` 自定义标签的方式使用组件
 
 ```html
 <template>
   <div>
-    <gc-base>这是一个基础卡片</gc-base>
+    <gc-base>这是一个基础卡片组件</gc-base>
   </div>
 </template>
 ```
@@ -48,19 +48,17 @@ Vue.use(GcMobile)
 ## 单个组件按需使用
 <!-- {.md} -->
 
-可以局部注册所需的组件，适用于与其他框架组合使用的场景
+可局部注册所需的组件
 <!-- {.md} -->
 
 ```js
 
 import { BaseCard } from 'gc-components-mobile'
 
-Vue.use(BaseCard)
-
 ```
 <!-- {.md} -->
 
-在模板中，用首先注册引用的组件，然后以自定义标签的方式使用组件
+在模板中，首先注册引用的组件，然后以自定义标签的方式使用组件
 
 ```html
 <template>

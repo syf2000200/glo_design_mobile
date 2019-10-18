@@ -56,8 +56,8 @@ module.exports = {
   pages: {
     index: {
       entry: 'examples/pc/main.js',
-      template: 'public/index.html',
-      filename: 'index.html'
+      template: 'public/home.html',
+      filename: 'home.html'
     },
     mobile: {
       entry: 'examples/mobile/main.js',

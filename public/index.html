@@ -5,13 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>GcDemo</title>
   </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but gc doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+  <body class="simple-demo">
+    <div id="content-wrapper">
+      <header class="header">
+        <div class="logo"><a href=""><img src="./logo.png" alt=""></a></div>
+        <div class="menu">
+          <ul>
+            <li><a href="">web组件</a></li>
+          </ul>
+        </div>
+      </header>
+      <div id="examples-1">
+        <div id="firstPage">
+            <div class="left">
+              <h1>GLO.Design</h1>
+              <p>本套设计语言服务于广联达产品级设计体系，在利于产品管理，<br> 统一风格的理念之上，让我们的开发人员可以更专注于用户体验</p>
+              <span>开始使用</span>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div id="secondPage">
+          <div class="wrap">
+            <ul>
+              <li id="one">
+                <strong>指北</strong>
+                <div class="img north"></div>
+                <p>称不上设计指南，只是在现有理论及方法的基础上加以实用性的总结</p>
+                <a href="" class="">查看更多 &gt;</a>
+              </li>
+              <li id="two">
+                <strong>组件</strong>
+                <div class="img cmpt"></div>
+                <p>即来即用式的组件库，帮助开发人员快速搭建页面</p>
+                <a href="" class="">查看更多 &gt;</a>
+              </li>
+              <li id="three">
+                <strong>图表</strong>
+                <div class="img charts"></div>
+                <p>使用率高的数据表达方式的总结，满足日常可视化需求</p>
+                <a href="" class="">查看更多 &gt;</a>
+              </li>
+              <li id="four">
+                <strong>代码</strong>
+                <div class="img code"></div>
+                <p>精简去冗余化的前端代码，一键复制，节省开发周期</p>
+                <a href="" class="">查看更多 &gt;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="thirdPage">
+          <div class="wrap">
+              <div class="info">
+                <div class="left">
+                  <strong>写在最后</strong>
+                  <p>  广材事业部体验技术部隶属于造价BG下的一个创新研发部门，而GLO.D则是服务于整条广材事业部下多个产品的，完整的，高复用性的设计语言和前端框架。<br>  我们意在统一及在日后的工作中屏除高重复、无意义、浪费资源的事情，以达到高效、快速迭代、专注于用户体验的结果。也非常欢迎其他事业部同学使用这套工具，并和我们一起不断完善。<br>  追求用户的极致体验和口碑是我们的宗旨，也是我们持之以恒的方向。</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="foot">
+          <div class="img"></div>
+          <p>Copyright 1999-2017 版权所有 广联达科技股份有限公司<br> 经营性网站备案信息 京ICP备17008382号-1 京ICP证010052号 京公网安备11010802021451号</p>
+        </div>
+        <div class="parallax-bg">
+          <div class="pic one"></div>
+          <div class="pic two"></div>
+          <div class="pic three"></div>
+          <div class="pic four"></div>
+        </div>
+      </div>
+  
+    </div>
+
+    <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.superscrollorama.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#firstPage').find('span').click(function() {
+          console.log(window.location)
+          window.location.href = window.location + '/home.html'
+        })
+        // This example adds a duration to the tweens so they are synced to the scroll position
+
+        var controller = $.superscrollorama();
+        
+        // amount of scrolling over which the tween takes place (in pixels)
+        var scrollDuration = 1000; 
+
+        // individual element tween examples
+        controller.addTween('#firstPage .left', TweenMax.to( $('#firstPage .left'), .15, {css:{opacity:0}}), scrollDuration);
+        controller.addTween('#firstPage .right', TweenMax.to( $('#firstPage .right'), .15, {css:{opacity:0}}), scrollDuration);
+        controller.addTween('#secondPage #one', TweenMax.to( $('#secondPage #one'), .15, {css:{top:'0px',opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('#secondPage #two', TweenMax.to( $('#secondPage #two'), .15, {css:{top:'0px',opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('#secondPage #three', TweenMax.to( $('#secondPage #three'), .15, {css:{top:'0px',opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('#secondPage #four', TweenMax.to( $('#secondPage #four'), .15, {css:{top:'0px',opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('.parallax-bg .one', TweenMax.to( $('.parallax-bg .one'), .15, {css:{left:'0px',top: '-20px', opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('.parallax-bg .two', TweenMax.to( $('.parallax-bg .two'), .15, {css:{left:'0px', opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('.parallax-bg .three', TweenMax.to( $('.parallax-bg .three'), .15, {css:{left:'0px',opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+        controller.addTween('.parallax-bg .four', TweenMax.to( $('.parallax-bg .four'), .15, {css:{right:'0px', top: '44%', opacity:1}, ease:Quad.easeInOut}), scrollDuration);
+      });
+    </script>
   </body>
 </html>

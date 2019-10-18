@@ -10,9 +10,3 @@ export default create({
     name: 'nav',
 })
 </script>
-
-<style scoped>
-.gc-nav {
-    
-}
-</style>

@@ -48,15 +48,3 @@ export default create({
 })
 </script>
 
-<style scoped>
-.gc-icon__symbol {
-    position: relative;
-    width: 1em;
-    height: 1em;
-    vertical-align: -.15em;
-    fill: currentColor;
-    overflow: hidden;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-</style>

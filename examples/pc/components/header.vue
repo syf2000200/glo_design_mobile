@@ -4,8 +4,7 @@
     class="page-header"
   >
     <div class="header-container">
-      <gc-icon name="cards" :size="50"></gc-icon>
-      <span class="name">广材移动端组件库</span>
+      <a href="javascript:void(0);" @click="goHome"><span class="name">广材移动端组件库</span></a>
     </div>
   </header>
 </template>
@@ -13,14 +12,19 @@
 export default {
   data () {
     return {}
-  }
+  },
+  methods: {
+    goHome() {
+      window.location.href = window.location.origin
+    }
+  },
 }
 </script>
 <style type="text/scss" lang="scss">
 @import '../assets/scss/index';
 .page-header {
   background-color: #fff;
-  box-shadow: 0 4px 30px 0 rgba(223, 225, 230, 0.8);
+  box-shadow: 0 2px 8px #f0f1f2;
   opacity: 0.98;
   position: relative !important;
   top: 0;

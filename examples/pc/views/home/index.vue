@@ -6,17 +6,25 @@
       <router-view class="view"></router-view>
     </div>
     <mainFooter></mainFooter>
-
+    <!-- <div class="mobile-toggle-wrap" @click="isMobileShow=true">
+      <gc-icon
+        class="mobile-toggle-wrap__icon"
+        :symbol="false"
+        :size="26"
+        name="mobile"
+        color="#628cf5"
+      ></gc-icon>开启移动端预览
+    </div> -->
     <mobile-frame></mobile-frame>
   </div>
 </template>
 
 <script>
-import mainHeader from './components/header.vue'
-import mainFooter from './components/footer.vue'
-import sideNav from './components/side-nav.vue'
-import MobileFrame from './components/mobile-frame.vue'
-import router from './router'
+import mainHeader from '../../components/header.vue'
+import mainFooter from '../../components/footer.vue'
+import sideNav from '../../components/side-nav.vue'
+import MobileFrame from '../../components/mobile-frame.vue'
+import router from '../../router'
 
 export default {
   name: 'app',
@@ -47,7 +55,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/scss/index';
+@import '../../assets/scss/index';
 
 .container {
   margin: 48px auto;
