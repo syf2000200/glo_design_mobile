@@ -4,7 +4,7 @@
     class="page-header"
   >
     <div class="header-container">
-      <a href="javascript:void(0);" @click="goHome"><span class="name">广材移动端组件库</span></a>
+      <a href="javascript:void(0);" @click="goHome"><span class="name">GC-Desgin-Mobile</span></a>
     </div>
   </header>
 </template>

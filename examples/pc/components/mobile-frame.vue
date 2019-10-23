@@ -16,7 +16,7 @@
   </div>
 </template>
 <script>
-import Nav from '../../nav.config.json'
+import Nav from '../../navConfig/mobile/nav.config.json'
 export default {
   data () {
     return {
@@ -34,7 +34,7 @@ export default {
       document.getElementById('mobileIframe').contentWindow.location.reload()
     },
     openMobileWindow () {
-      window.open(this.baseUrl + 'mobile.html#/index')
+      window.open(this.baseOrigin + '/mobile.html#/index')
     }
   },
   mounted() {
@@ -70,6 +70,7 @@ export default {
   z-index: 999;
   border: 1px solid #e2ecf4;
   border-radius: 4px;
+  box-shadow: 0 0 10px #dddddd;
   &__close {
     position: absolute;
     bottom: -40px;
@@ -109,7 +110,6 @@ export default {
     width: 375px;
     height: 812px;
     padding-bottom: 20px;
-    background-color: #f5f5f9;
     iframe {
       height: 100%;
       width: 100%;

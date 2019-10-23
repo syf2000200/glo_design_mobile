@@ -3,7 +3,10 @@
 
 ----
 <!-- {.md} -->
-
+## 创建一个项目
+<!-- {.md} -->
+>*可以是已有项目，或者是使用 vue-cli 新创建的空项目，你也可以从<!-- {.md} --> [官方示例](http://10.1.83.101:8181/syf2000200/gc_components_demo) 脚手架里拷贝并修改*
+<!-- {.md} -->
 ## 安装
 <!-- {.md} -->
 
@@ -43,8 +46,6 @@ Vue.use(gc)
 ```
 <!-- {.md} -->
 
-<!-- {.md} -->
-
 ## 单个组件按需使用
 <!-- {.md} -->
 
@@ -59,7 +60,7 @@ import { BaseCard } from 'gc-components-mobile'
 <!-- {.md} -->
 
 在模板中，首先注册引用的组件，然后以自定义标签的方式使用组件
-
+<!-- {.md} -->
 ```html
 <template>
   <div>
@@ -67,6 +68,7 @@ import { BaseCard } from 'gc-components-mobile'
   </div>
 </template>
 ```
+<!-- {.md} -->
 ```js
 <script>
   export default {

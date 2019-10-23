@@ -25,7 +25,7 @@
   </div>
 </template>
 <script>
-import navConf from '@/nav.config.json'
+import navConf from '@/navConfig/mobile/nav.config.json'
 export default {
   data () {
     return {

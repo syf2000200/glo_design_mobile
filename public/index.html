@@ -12,10 +12,15 @@
   <body class="simple-demo">
     <div id="content-wrapper">
       <header class="header">
-        <div class="logo"><a href=""><img src="./logo.png" alt=""></a></div>
+        <div class="logo"><a href="javascript:;"><img src="./logo.png" alt="">GC-Desgin</a></div>
         <div class="menu">
           <ul>
-            <li><a href="">web组件</a></li>
+            <li>
+              <a href="javascript:;">设计规范</a>
+            </li>
+            <li>
+              <a href="javascript:;" class="goMobilePage">Mobile组件</a>
+            </li>
           </ul>
         </div>
       </header>
@@ -24,7 +29,13 @@
             <div class="left">
               <h1>GLO.Design</h1>
               <p>本套设计语言服务于广联达产品级设计体系，在利于产品管理，<br> 统一风格的理念之上，让我们的开发人员可以更专注于用户体验</p>
-              <span>开始使用</span>
+              <span class="goPage">开始使用</span>
+              <span class="QRCode">扫码演示
+                <div class="QRWrap">
+                  <div class="QRContent"><img src="./images/QRCode.png" alt=""></div>
+                  <s></s>
+                </div>
+              </span>
             </div>
             <div class="right"></div>
         </div>
@@ -87,9 +98,13 @@
     <script src="js/jquery.superscrollorama.js"></script>
     <script>
       $(document).ready(function() {
-        $('#firstPage').find('span').click(function() {
+        $('.goPcPage').click(function() {
           console.log(window.location)
-          window.location.href = window.location + '/home.html'
+          window.location.href = window.location + 'pc.html'
+        })
+        $('.goMobilePage').click(function() {
+          console.log(window.location)
+          window.location.href = window.location + 'home.html'
         })
         // This example adds a duration to the tweens so they are synced to the scroll position
 

@@ -1,5 +1,5 @@
 {
-  "name": "gc-components-mobile",
+  "name": "gc-desgin-mobile",
   "version": "0.0.16",
   "description": "GC移动端组件库",
   "main": "lib/gc.common.js",
