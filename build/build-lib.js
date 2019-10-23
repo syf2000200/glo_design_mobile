@@ -11,6 +11,7 @@ const tasks = [
   'clean',
   'build:entry',
   'lib',
+  'dev:style',
   'build:style'
 ]
 

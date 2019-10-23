@@ -63,7 +63,7 @@ module.exports = {
       entry: 'examples/mobile/main.js',
       template: 'public/mobile.html',
       filename: 'mobile.html'
-    },
+    }
   },
   // 扩展 webpack 配置，使 packages 加入编译
   chainWebpack: config => {

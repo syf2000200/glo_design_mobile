@@ -1,9 +1,9 @@
 <template>
   <span class="gc-icon" @click="onClick" :style="{ fontSize: size +'px'}">
     <svg v-if="symbol" class="gc-icon__symbol" aria-hidden="true">
-      <use :xlink:href="`#vc-icon-${name}`"></use>
+      <use :xlink:href="`#icon-${name}`"></use>
     </svg>
-    <i v-else class="gc-icon__font" :class="'vc-icon-' + name" :style="{ color: color }"></i>
+    <i v-else class="gc-icon__font" :class="'icon-' + name" :style="{ color: color }"></i>
   </span>
 </template>
 

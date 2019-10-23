@@ -21,8 +21,8 @@
     "dev:style": "cd ./packages/theme-chalk && npm run build && cd ./",
     "build:docs": "vue-cli-service build",
     "build:entry": "node build/build-entry.js",
-    "build:lib": "node build/build-lib.js ",
     "build:style": "cp-cli packages/theme-chalk/lib lib/theme-chalk",
+    "build:lib": "node build/build-lib.js ",
     "publish:docs": "node build/publish-docs.js",
     "release": "sh build/release.sh",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"

@@ -1,21 +1,20 @@
 <template>
-  <div
-    @click="$emit('click')"
+  <button
+    :type="nativeType"
     class="gc-button"
-    :class="[
-      type ? 'gc-button--' + type : '',
-      size ? 'gc-button--' + size : '',
-      {
-        'is-disabled': disabled,
-        'is-plain': plain,
-        'is-square': square,
-        'is-shadow':shadow,
-        'is-opacity':opacity
-      }
-    ]"
-  >
-    <slot></slot>
-  </div>
+    :class="['gc-button--' + type, 'gc-button--' + size, {
+      'is-disabled': disabled,
+      'is-plain': plain
+    }]"
+    @click="handleClick"
+    :disabled="disabled">
+    <span class="gc-button-icon" v-if="icon || $slots.icon">
+      <slot name="icon">
+        <i v-if="icon" class="gc-icon__font" :class="'icon-' + icon"></i>
+      </slot>
+    </span>
+    <label class="gc-button-text"><slot></slot></label>
+  </button>
 </template>
 
 <script>
@@ -23,17 +22,38 @@ import create from '../utils/create-basic'
 export default create({
   name: 'button',
   props: {
+    icon: String,
+    disabled: Boolean,
+    nativeType: String,
+    plain: Boolean,
     type: {
       type: String,
-      default: 'default'
+      default: 'default',
+      validator(value) {
+        return [
+          'default',
+          'danger',
+          'primary'
+        ].indexOf(value) > -1;
+      }
     },
-    size: String,
-    shadow: Boolean,
-    disabled: Boolean,
-    square: Boolean,
-    plain: Boolean,
-    opacity: Boolean
-  }
+    size: {
+      type: String,
+      default: 'normal',
+      validator(value) {
+        return [
+          'small',
+          'normal',
+          'large'
+        ].indexOf(value) > -1;
+      }
+    }
+  },
+  methods: {
+    handleClick(evt) {
+      this.$emit('click', evt);
+    }
+  },
 })
 </script>
 

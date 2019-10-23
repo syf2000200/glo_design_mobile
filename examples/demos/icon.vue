@@ -1,10 +1,10 @@
 <template>
   <div class="demo-block">
     <ul class="icon-list">
-      <li v-for="name in icons" :key="name">
+      <li v-for="item in icons" :key="item.name">
         <div class="demo-icon-wrap">
-          <gc-icon :name="name.substring(5)" :size="12"></gc-icon>
-          <span class="name">{{name.substring(5)}}</span>
+          <gc-icon :name="item.name" :size="24"></gc-icon>
+          <span class="name">{{item.name}}</span>
         </div>
       </li>
     </ul>
@@ -12,14 +12,14 @@
 </template>
 
 <script>
-let iconList = require('../icon.json')
+let { glyphs } = require('../iconfont.json')
 
 export default {
   name: 'icon-demo',
 
   data () {
     return {
-      icons: iconList
+      icons: glyphs
     }
   }
 }

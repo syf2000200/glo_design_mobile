@@ -13,9 +13,7 @@
 ::: demo
 
 ```html
-<gc-icon name="cards-playing-outline" :size="16"></gc-icon>
-<gc-icon name="cards" :size="16"></gc-icon>
-<gc-icon name="close" :size="16"></gc-icon>
+<gc-icon name="arrow-bold" :size="24"></gc-icon>
 ```
 
 :::

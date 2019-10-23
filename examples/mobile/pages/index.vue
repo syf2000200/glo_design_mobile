@@ -33,7 +33,7 @@
   </div>
 </template>
 <script>
-import navConf from '@/navConfig/mobile/nav.config.json'
+import navConf from '@/nav.config.json'
 export default {
   data () {
     return {

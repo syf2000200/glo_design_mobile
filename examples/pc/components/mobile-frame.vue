@@ -16,7 +16,7 @@
   </div>
 </template>
 <script>
-import Nav from '../../navConfig/mobile/nav.config.json'
+import Nav from '../../nav.config.json'
 export default {
   data () {
     return {

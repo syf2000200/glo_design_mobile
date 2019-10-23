@@ -1,4 +1,4 @@
-# Icon 图标
+# Button 按钮
 <!-- {.md} -->
 
 ---
@@ -13,9 +13,10 @@
 ::: demo
 
 ```html
-<gc-button></gc-button>
-<gc-icon name="cards" :size="16"></gc-icon>
-<gc-icon name="close" :size="16"></gc-icon>
+<gc-button>button</gc-button>
+<gc-button size="large" type="default" @click="handleClick">default</gc-button>
+<gc-button size="large" type="danger">danger</gc-button>
+<gc-button size="large" type="primary">primary</gc-button>
 ```
 
 :::
@@ -26,7 +27,8 @@
 <!-- {.md} -->
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
-| name     | 图标名称  | string  | -          |    -     |
-| color    | 图标颜色  | string  | -           |    -    |
-| size    | 图标大小  | number  | -           |    -    |
-| symbol    | 是否多色（开启将以`svg`标签方式引入图标）  | boolean  | `true`,`false`          |    `true`     |
+| icon     | 设置图标  | string  | -          |    -     |
+| plain    | ghost模式  | boolean  | -           |    -    |
+| type    | 按钮类型  | string  | -           | default |
+| size    | 按钮尺寸 | string  |          | normal |
+| disabled | 按钮禁用 | boolean  |          | normal |

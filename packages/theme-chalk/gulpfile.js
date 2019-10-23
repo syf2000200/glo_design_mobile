@@ -29,7 +29,7 @@ function compileCssToVw(done) {
       postcss([
         tobem(bemConfig),
         pxtoviewport({
-          viewportWidth: 750, // (Number) The width of the viewport.
+          viewportWidth: 375, // (Number) The width of the viewport.
           viewportHeight: 1334, // (Number) The height of the viewport.
           unitPrecision: 3, // (Number) 转换的时候除不尽保留3位小数.
           viewportUnit: 'vw', // (String) 转换为vw单位.
