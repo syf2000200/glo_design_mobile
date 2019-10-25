@@ -109,7 +109,6 @@ export default {
   .iframe-wrap {
     width: 375px;
     height: 812px;
-    padding-bottom: 20px;
     iframe {
       height: 100%;
       width: 100%;

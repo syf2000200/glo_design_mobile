@@ -1,0 +1,25 @@
+@import "common/var.scss";
+@component-namespace gc {
+    @component tab-item {
+        display: block;
+        padding: 7px 0;
+        flex: 1;
+        text-decoration: none;
+        @descendent icon {
+        size: 24px;
+        margin: 0 auto 5px;
+        &:empty {
+            display: none;
+        }
+        & > * {
+            display: block;
+            size: 100%;
+        }
+        }
+        @descendent label {
+            color: inherit;
+            font-size: $tab-item-font-size;
+            line-height: 1;
+        }
+    }
+}

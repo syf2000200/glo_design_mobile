@@ -1,14 +1,14 @@
 <template>
   <div class="demo-block">
-    <gc-header title="我是标题" fixed>
+    <gc-navbar title="我是标题" fixed>
         <gc-button slot="left" icon="arrow-left-reg" @click="handleBack">返回</gc-button>
         <gc-button slot="right" icon="more-fill"></gc-button>
-    </gc-header>
+    </gc-navbar>
   </div>
 </template>
 <script>
 export default {
-  name: 'button-demo',
+  name: 'navbar-demo',
   methods: {
     handleBack() {
       console.log('返回')

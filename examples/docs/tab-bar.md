@@ -1,4 +1,4 @@
-# Button 按钮
+# Tabbar 导航栏
 <!-- {.md} -->
 
 ---
@@ -13,10 +13,20 @@
 ::: demo
 
 ```html
-<gc-button>button</gc-button>
-<gc-button size="large" type="default" @click="handleClick">default</gc-button>
-<gc-button size="large" type="danger">danger</gc-button>
-<gc-button size="large" type="primary">primary</gc-button>
+<gc-tabbar :fixed="true">
+    <gc-tabitem id="1">
+        <gc-icon slot="icon" name="arrow-bold" :size="24"></gc-icon>
+        1
+    </gc-tabitem>
+    <gc-tabitem id="2">
+        <gc-icon slot="icon" name="arrow-bold" :size="24"></gc-icon>
+        2
+    </gc-tabitem>
+    <gc-tabitem id="3">
+        <gc-icon slot="icon" name="arrow-bold" :size="24"></gc-icon>
+        3
+    </gc-tabitem>
+</gc-tabbar>
 ```
 
 :::

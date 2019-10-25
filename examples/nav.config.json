@@ -56,10 +56,16 @@
       "isMobile": "1",
       "items": [
         {
-          "desc": "头部导航",
-          "name": "header",
+          "desc": "Tabbar 标签栏",
+          "name": "tab-bar",
           "isMobile": "1",
-          "path": "/header"
+          "path": "/tab-bar"
+        },
+        {
+          "desc": "Navbar 导航栏",
+          "name": "nav-bar",
+          "isMobile": "1",
+          "path": "/nav-bar"
         }
       ]
     },
