@@ -15,7 +15,7 @@ then
   VERSION=$VERSION npm run build:lib
 
   # commit
-  git tag v$VERSION
+  #git tag v$VERSION
   # npm run changelog
   git commit -am "release: $VERSION"
 
