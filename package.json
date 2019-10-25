@@ -1,6 +1,6 @@
 {
-  "name": "gc-desgin-mobile",
-  "version": "0.0.16",
+  "name": "GLO_Design_Mobile",
+  "version": "0.0.17",
   "description": "GC移动端组件库",
   "main": "lib/gc.common.js",
   "style": "lib/theme-chalk/index.h5.css",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "http://10.0.204.163:8181/syf2000200/gc_components_demo.git"
   },
   "scripts": {
     "init": "npm install commitizen -g && commitizen init cz-conventional-changelog --save-dev --save-exact && npm run theme",

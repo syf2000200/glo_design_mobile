@@ -557,8 +557,9 @@ blockquote {
 .header .logo a {
 	line-height: 40px;
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 24px;
+	color: #333333;
 }
 .header .logo img {
 	display: inline-block;

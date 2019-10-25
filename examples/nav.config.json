@@ -52,6 +52,18 @@
       ]
     },
     {
+      "desc": "导航组件",
+      "isMobile": "1",
+      "items": [
+        {
+          "desc": "头部导航",
+          "name": "header",
+          "isMobile": "1",
+          "path": "/header"
+        }
+      ]
+    },
+    {
       "desc": "卡片组件",
       "isMobile": "1",
       "items": [

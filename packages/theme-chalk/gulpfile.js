@@ -42,7 +42,7 @@ function compileCssToVw(done) {
         cssnano({
           'cssnano-preset-advanced': {
             zindex: false,
-            autoprefixer: false
+            autoprefixer: false,
           }
         })
       ])

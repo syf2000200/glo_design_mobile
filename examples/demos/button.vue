@@ -32,7 +32,10 @@ export default {
   },
 }
 </script>
-<style lang="css" scoped>
+<style scoped>
+.page-button-group {
+  padding: 0 20px;
+}
 .page-button-group, .page-button-group>* {
     margin-bottom: 15px;
 }
