@@ -10,7 +10,7 @@ import GcSwipeItem from './swipe-item'
 import GcTabBar from './tab-bar'
 import GcTabItem from './tab-item'
 import GcTextCard from './text-card'
-const version = '0.0.7'
+const version = '0.0.8'
 const components = [
   GcBaseCard,
   GcButton,
