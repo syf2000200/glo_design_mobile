@@ -1,6 +1,6 @@
 @import "common/var.scss";
-@component-namespace gc {
-  @b tabbar {
+
+.gc-tabbar {
     background-image:linear-gradient(180deg, $color-grey, $color-grey 50%, transparent 50%);
     background-size: 100% 1px;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     width: 100%;
     position: absolute;
     text-align: center;
-    @when fixed {
+    &.is-fixed {
       position: fixed;
       right: 0;
       bottom: 0;
@@ -19,9 +19,8 @@
       z-index: $z-index-normal;
       box-shadow: 0 -3px 6px #dddddd;
     }
-    > .gc-tab-item.is-selected {
+    .gc-tab-item.is-selected {
       background-color: $tabbar-tab-item-selected-background-color;
       color: $tabbar-tab-item-selected-color;
     }
-  }
 }

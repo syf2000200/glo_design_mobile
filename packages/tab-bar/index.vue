@@ -10,7 +10,7 @@
 
 import create from '../utils/create-basic'
 export default create({
-  name: 'tabbar',
+  name: 'tabBar',
   props: {
     fixed: Boolean,
     value: {}

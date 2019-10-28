@@ -66,6 +66,12 @@
           "name": "nav-bar",
           "isMobile": "1",
           "path": "/nav-bar"
+        },
+        {
+          "desc": "Swipe 轮播",
+          "name": "swipe",
+          "isMobile": "1",
+          "path": "/swipe"
         }
       ]
     },

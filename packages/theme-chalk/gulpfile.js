@@ -75,17 +75,16 @@ function copyFont(done) {
 }
 
 function watchCss(done) {
-  return watch('./src/*.scss', parallel(compileCssToVw, compileCssToPx))
+  return watch('./src/*.scss', parallel(compileCssToVw))
 }
 
 function watchFonts(done) {
   return watch('./src/fonts/**', copyFont)
 }
 
-exports.build = parallel(compileCssToVw, compileCssToPx, copyFont)
+exports.build = parallel(compileCssToVw, copyFont)
 exports.default = series(
   compileCssToVw,
-  compileCssToPx,
   copyFont,
   parallel(watchCss, watchFonts)
 )

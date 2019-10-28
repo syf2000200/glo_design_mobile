@@ -24,7 +24,7 @@
  */
 import create from '../utils/create-basic'
 export default create({
-  name: 'tabitem',
+  name: 'tabItem',
   props: ['id'],
   methods: {
       handle() {

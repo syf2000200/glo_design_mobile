@@ -33,13 +33,15 @@
 :::
 
 方式二：<!-- {.md} -->
-
+::: demo
 ```js
 
 import { Button } from 'gc-components-mobile'
 
 ```
+:::
 <!-- {.md} -->
+::: demo
 ```html
 <template>
   <div>
@@ -47,7 +49,9 @@ import { Button } from 'gc-components-mobile'
   </div>
 </template>
 ```
+:::
 <!-- {.md} -->
+::: demo
 ```js
 <script>
   export default {
@@ -57,6 +61,7 @@ import { Button } from 'gc-components-mobile'
   }
 </script>
 ```
+:::
 <!-- {.md} -->
 
 ## API

@@ -1,23 +1,27 @@
 /* eslint-disable */
 // This file is auto gererated by build/build-entry.js
-import BaseCard from './base-card'
-import Button from './button'
-import Icon from './icon'
-import Loading from './loading'
-import NavBar from './nav-bar'
-import TabBar from './tab-bar'
-import TabItem from './tab-item'
-import TextCard from './text-card'
+import GcBaseCard from './base-card'
+import GcButton from './button'
+import GcIcon from './icon'
+import GcLoading from './loading'
+import GcNavBar from './nav-bar'
+import GcSwipe from './swipe'
+import GcSwipeItem from './swipe-item'
+import GcTabBar from './tab-bar'
+import GcTabItem from './tab-item'
+import GcTextCard from './text-card'
 const version = '0.0.7'
 const components = [
-  BaseCard,
-  Button,
-  Icon,
-  Loading,
-  NavBar,
-  TabBar,
-  TabItem,
-  TextCard
+  GcBaseCard,
+  GcButton,
+  GcIcon,
+  GcLoading,
+  GcNavBar,
+  GcSwipe,
+  GcSwipeItem,
+  GcTabBar,
+  GcTabItem,
+  GcTextCard
 ]
 const install = Vue => {
   components.forEach(Component => {
@@ -31,14 +35,16 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
   install,
   version,
-  BaseCard,
-  Button,
-  Icon,
-  Loading,
-  NavBar,
-  TabBar,
-  TabItem,
-  TextCard
+  GcBaseCard,
+  GcButton,
+  GcIcon,
+  GcLoading,
+  GcNavBar,
+  GcSwipe,
+  GcSwipeItem,
+  GcTabBar,
+  GcTabItem,
+  GcTextCard
 }
 export default {
   install,

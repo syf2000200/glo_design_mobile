@@ -12,7 +12,7 @@ function isObj(x) {
 }
 
 function get(object, path) {
-  const keys = path.split('.');
+  const keys = path.split('.'); 
   let result = object;
 
   keys.forEach(key => {

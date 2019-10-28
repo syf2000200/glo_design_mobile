@@ -12,7 +12,7 @@ const tasks = [
   'build:entry',
   'dev:style',
   'lib',
-  'build:style'
+  'build:style',
 ]
 
 tasks.forEach(task => {
