@@ -48,6 +48,12 @@
           "name": "loading",
           "isMobile": "1",
           "path": "/loading"
+        },
+        {
+          "desc": "Calendar 日历",
+          "name": "calendar",
+          "isMobile": "1",
+          "path": "/calendar"
         }
       ]
     },

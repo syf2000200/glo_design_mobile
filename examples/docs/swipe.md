@@ -1,4 +1,4 @@
-# Button 按钮
+# Swipe 轮播
 <!-- {.md} -->
 
 ---
@@ -27,7 +27,7 @@
 ::: demo
 ```js
 
-import { Swipe, SwipeItem } from 'gc-components-mobile'
+import { Swipe, SwipeItem } from 'glo_design_mobile'
 
 ```
 ::: 

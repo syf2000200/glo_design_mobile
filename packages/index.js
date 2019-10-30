@@ -2,6 +2,7 @@
 // This file is auto gererated by build/build-entry.js
 import GcBaseCard from './base-card'
 import GcButton from './button'
+import GcCalendar from './calendar'
 import GcIcon from './icon'
 import GcLoading from './loading'
 import GcNavBar from './nav-bar'
@@ -14,6 +15,7 @@ const version = '0.0.8'
 const components = [
   GcBaseCard,
   GcButton,
+  GcCalendar,
   GcIcon,
   GcLoading,
   GcNavBar,
@@ -37,6 +39,7 @@ export {
   version,
   GcBaseCard,
   GcButton,
+  GcCalendar,
   GcIcon,
   GcLoading,
   GcNavBar,

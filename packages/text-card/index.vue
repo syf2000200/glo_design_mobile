@@ -1,9 +1,9 @@
 <template>
-  <base-card v-bind="$props">
+  <gc-base v-bind="$props">
     <div slot="content">
       {{message}}
     </div>
-  </base-card>
+  </gc-base>
 </template>
 
 <script>

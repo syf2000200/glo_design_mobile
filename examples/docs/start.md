@@ -11,7 +11,7 @@
 <!-- {.md} -->
 
 ```
-npm install gc-components-mobile
+npm install glo_design_mobile
 ```
 <!-- {.md} -->
 
@@ -19,15 +19,15 @@ npm install gc-components-mobile
 <!-- {.md} -->
 
 ```js
-import gc from 'gc-components-mobile' // 引入组件库
+import gc from 'glo_design_mobile' // 引入组件库
 ```
 <!-- {.md} -->
 
 引入<!-- {.md} -->`px`或者`vw`布局样式
 
 ```js
-import 'gc-components-mobile/lib/theme-chalk/index.px.css' // px单位，适用于pc端布局
-import 'gc-components-mobile/lib/theme-chalk/index.vw.css' // vw单位，适用于移动端布局
+import 'glo_design_mobile/lib/theme-chalk/index.px.css' // px单位，适用于pc端布局
+import 'glo_design_mobile/lib/theme-chalk/index.vw.css' // vw单位，适用于移动端布局
 ```
 最后全局调用组件库<!-- {.md} -->
 ```js
@@ -54,12 +54,12 @@ Vue.use(gc)
 
 ```js
 
-import { BaseCard } from 'gc-components-mobile'
+import { BaseCard } from 'glo_design_mobile'
 
 ```
 <!-- {.md} -->
 
-在模板中，首先注册引用的组件，然后以自定义标签的方式使用组件
+在模板中，首先注册引用的组件，然后以自定义标签的方式使用组件，需要注意的是，样式文件依然需要单独引入。
 <!-- {.md} -->
 ```html
 <template>

@@ -12,6 +12,8 @@ import GcSwipeItem from '../swipe-item/index.vue'
 import GcTabBar from '../tab-bar/index.vue'
 import GcTabItem from '../tab-item/index.vue'
 import GcTextCard from '../text-card/index.vue'
+import GcCalendar from '../calendar/index.vue'
+
 export default function(sfc) {
   sfc.props = Object.assign(sfc.props || {}, GcBaseCard.props)
   sfc.components = Object.assign(sfc.components || {}, {
@@ -25,6 +27,7 @@ export default function(sfc) {
     GcTabBar,
     GcTabItem,
     GcTextCard,
+    GcCalendar,
   })
   sfc.inheritAttrs = false
   return createBasic(sfc)

@@ -35,7 +35,7 @@
 ::: demo
 ```js
 
-import { TabBar, TabItem, Icon } from 'gc-components-mobile'
+import { TabBar, TabItem, Icon } from 'glo_design_mobile'
 
 ```
 :::

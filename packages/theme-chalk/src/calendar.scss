@@ -1,0 +1,12 @@
+@import "common/var.scss";
+@component-namespace gc {
+    @b calendar {
+      @e submit {
+        position: absolute;
+        z-index: 99999;
+        width: 100%;
+        background: #ffffff;
+        bottom: 300px;
+      }
+    }
+  }
