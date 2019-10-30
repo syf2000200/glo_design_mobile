@@ -14,7 +14,6 @@
   </div>
 </template>
 <script>
-import dayjs from 'dayjs'
 export default {
   name: 'calendar-demo',
   data() {
@@ -45,6 +44,7 @@ export default {
       this.disabledDate.push('2019-10-28', '2019-10-31')
     },
     onChangeDate(date) {
+      this.isShow = false
       console.log(date)
     },
   },

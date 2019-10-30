@@ -14,7 +14,6 @@
 
 <script>
 import Vue from 'vue'
-import dayjs from 'dayjs'
 import Calendar from 'vue-mobile-calendar'
 import create from '../utils/create-basic'
 
@@ -24,14 +23,11 @@ export default create({
   name: 'calendar',
   data() {
       return {
-          date: []
+          date: [],
       }
   },
   props: {
-      isShow: {
-          type: Boolean,
-          default: false,
-      },
+      isShow: Boolean,
       mode: String,
       defaultDate: {
           type: [Date, Number, Array, String],
@@ -54,13 +50,15 @@ export default create({
     },
     onConfirm() {
         this.$emit('onConfirm', this.date);
+        this.show = false
     },
   },
   watch: {
       defaultDate(nv, ov) {
+        this.date = []
         this.date.push(nv)
         console.log(this.date)
-      }
+      },
   },
 })
 </script>
