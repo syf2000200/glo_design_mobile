@@ -13,21 +13,14 @@ import GcTabBar from '../tab-bar/index.vue'
 import GcTabItem from '../tab-item/index.vue'
 import GcTextCard from '../text-card/index.vue'
 import GcCalendar from '../calendar/index.vue'
+import GcIndexList from '../index-list/index.vue'
+import GcIndexSection from '../index-section/index.vue'
+import GcCell from '../cell/index.vue'
 
 export default function(sfc) {
   sfc.props = Object.assign(sfc.props || {}, GcBaseCard.props)
   sfc.components = Object.assign(sfc.components || {}, {
     GcBaseCard,
-    GcIcon,
-    GcButton,
-    GcLoading,
-    GcNavBar,
-    GcSwipe,
-    GcSwipeItem,
-    GcTabBar,
-    GcTabItem,
-    GcTextCard,
-    GcCalendar,
   })
   sfc.inheritAttrs = false
   return createBasic(sfc)

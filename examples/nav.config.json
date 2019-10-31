@@ -54,6 +54,12 @@
           "name": "calendar",
           "isMobile": "1",
           "path": "/calendar"
+        },
+        {
+          "desc": "IndexList 索引列表",
+          "name": "index-list",
+          "isMobile": "1",
+          "path": "/index-list"
         }
       ]
     },

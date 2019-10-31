@@ -1,0 +1,15 @@
+@component-namespace gc {
+    @b indexsection {
+      padding: 0;
+      margin: 0;
+      
+      @e index {
+        margin: 0;
+        padding: 10px;
+        background-color: #fafafa;
+        & + ul {
+          padding: 0;
+        }
+      }
+    }
+  }

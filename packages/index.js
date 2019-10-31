@@ -3,7 +3,10 @@
 import GcBaseCard from './base-card'
 import GcButton from './button'
 import GcCalendar from './calendar'
+import GcCell from './cell'
 import GcIcon from './icon'
+import GcIndexList from './index-list'
+import GcIndexSection from './index-section'
 import GcLoading from './loading'
 import GcNavBar from './nav-bar'
 import GcSwipe from './swipe'
@@ -16,7 +19,10 @@ const components = [
   GcBaseCard,
   GcButton,
   GcCalendar,
+  GcCell,
   GcIcon,
+  GcIndexList,
+  GcIndexSection,
   GcLoading,
   GcNavBar,
   GcSwipe,
@@ -40,7 +46,10 @@ export {
   GcBaseCard,
   GcButton,
   GcCalendar,
+  GcCell,
   GcIcon,
+  GcIndexList,
+  GcIndexSection,
   GcLoading,
   GcNavBar,
   GcSwipe,

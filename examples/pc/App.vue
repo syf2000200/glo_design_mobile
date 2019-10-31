@@ -50,6 +50,7 @@ export default {
 @import './assets/scss/index';
 
 .container {
+  width: 1200px;
   margin: 48px auto;
   background-color: #fff;
   .nav {
@@ -58,8 +59,8 @@ export default {
   }
   .view {
     float: left;
-    width: calc(100% - 700px);
-    padding: 32px 48px 48px;
+    width: calc(100% - 340px);
+    padding: 32px 40px 48px;
     box-sizing: border-box;
   }
 }

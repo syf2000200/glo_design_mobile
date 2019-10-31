@@ -65,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 .docs-simulator {
   position: fixed;
-  top: 10px;
+  top: 100px;
   right: 15px;
   z-index: 999;
   border: 1px solid #e2ecf4;
@@ -108,7 +108,7 @@ export default {
   }
   .iframe-wrap {
     width: 375px;
-    height: 812px;
+    height: 780px;
     iframe {
       height: 100%;
       width: 100%;

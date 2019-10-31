@@ -544,11 +544,11 @@ blockquote {
 
 .header {
 	position: fixed;
-	width: 80%;
-	left: 0;
+	width: 1200px;
+	left: 50%;
 	top: 0;
+	margin-left: -600px;
 	z-index: 999;
-	padding: 0 10%;
 }
 .header .logo {
 	margin: 20px;
@@ -562,10 +562,11 @@ blockquote {
 	color: #333333;
 }
 .header .logo img {
-	display: inline-block;
-    line-height: 40px;
-    margin-right: 20px;
-    float: left;
+	max-width: 40px;
+	max-height: 40px;
+	line-height: 40px;
+	margin-right: 20px;
+	float: left;
 }
 .header .menu {
 	float: right;

@@ -1,6 +1,6 @@
 @import "common/var.scss";
 @b gc {
-  padding: 32px;
+  padding: 16px;
   display: inline-block;
   box-sizing: border-box;
   position: relative;
@@ -9,7 +9,7 @@
   }
   @e header {
     border-bottom: 1px dashed $--border-color-base;
-    height: 32px;
+    height: 16px;
     margin-bottom: 16px;
     @e label {
       font-size: $--font-size-small;

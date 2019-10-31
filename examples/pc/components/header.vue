@@ -24,7 +24,7 @@ export default {
 @import '../assets/scss/index';
 .page-header {
   background-color: #fff;
-  box-shadow: 0 2px 8px #f0f1f2;
+  border-bottom: 1px solid #dddddd;
   opacity: 0.98;
   position: relative !important;
   top: 0;
@@ -34,14 +34,15 @@ export default {
   transition: all 0.3s;
   z-index: 100;
   .header-container {
-    margin: 0 20px;
+    width: 1200px;
+    margin: 0 auto;
     a {
       display: flex;
       align-items: center;
       height: 80px;
     }
     .name {
-      color: #628cf5;
+      color: #108EE9;
       font-size: 20px;
       margin-left: 5px;
     }

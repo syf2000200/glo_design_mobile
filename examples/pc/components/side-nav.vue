@@ -41,15 +41,15 @@ export default {
   padding: 0;
   color: #348ad3;
   background-color: #fff;
-  border-right: 1px solid #e2ecf4;
+  border-right: 1px solid #dddddd;
   z-index: 99;
   .group-container {
     margin-bottom: 32px;
   }
   .side-nav-title {
     padding: 0 24px 8px;
-    color: #666666;
-    font-size: 16px;
+    color: #333333;
+    font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -61,7 +61,7 @@ export default {
       display: block;
       position: relative;
       padding: 8px 24px;
-      color: rgba(0,0,0,.55);
+      color: #666666;
       font-weight: normal;
       line-height: 1.5;
       cursor: pointer;
@@ -73,7 +73,7 @@ export default {
       display: block;
       position: relative;
       padding: 6px 0 6px 24px;
-      color: rgba(0,0,0,.55);
+      color: #666666;
     }
     .slid-nav-component {
       display: block;
@@ -83,7 +83,8 @@ export default {
       font-size: 13px;
     }
     .active {
-      color: #348ad3;
+      color: #333333;
+      background: #F4FBFE;
     }
   }
 }

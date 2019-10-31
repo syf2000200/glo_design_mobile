@@ -36,7 +36,7 @@
 ::: demo
 ```js
 
-import { Button } from 'glo_design_mobile'
+import { GcButton } from 'glo_design_mobile'
 
 ```
 :::
@@ -45,7 +45,7 @@ import { Button } from 'glo_design_mobile'
 ```html
 <template>
   <div>
-    <Button>这是一个基础卡片</Button>
+    <gc-button>这是一个基础卡片</gc-button>
   </div>
 </template>
 ```
@@ -56,7 +56,7 @@ import { Button } from 'glo_design_mobile'
 <script>
   export default {
     components: {
-      Button,
+      GcButton,
     }
   }
 </script>
