@@ -39,4 +39,7 @@ export default {
 .page-button-group, .page-button-group>* {
     margin-bottom: 15px;
 }
+.gc-button--small {
+  margin-right: 10px;
+}
 </style>

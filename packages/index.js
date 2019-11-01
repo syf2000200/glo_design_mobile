@@ -9,6 +9,7 @@ import GcIndexList from './index-list'
 import GcIndexSection from './index-section'
 import GcLoading from './loading'
 import GcNavBar from './nav-bar'
+import GcPullDown from './pull-down'
 import GcSwipe from './swipe'
 import GcSwipeItem from './swipe-item'
 import GcTabBar from './tab-bar'
@@ -25,6 +26,7 @@ const components = [
   GcIndexSection,
   GcLoading,
   GcNavBar,
+  GcPullDown,
   GcSwipe,
   GcSwipeItem,
   GcTabBar,
@@ -52,6 +54,7 @@ export {
   GcIndexSection,
   GcLoading,
   GcNavBar,
+  GcPullDown,
   GcSwipe,
   GcSwipeItem,
   GcTabBar,

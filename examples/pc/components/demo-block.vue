@@ -43,6 +43,7 @@ export default {
   background-color: #f7f7f7;
   border: 1px solid #e2ecf4;
   border-radius: 4px;
+  box-shadow: 0 0 6px #dddddd;
   pre code {
     font-family: Consolas, Menlo, Courier, monospace;
     line-height: 22px;

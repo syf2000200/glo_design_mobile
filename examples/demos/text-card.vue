@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div class="demo-block">
-    <gc-text message="这是卡片内容"></gc-text>
-    <gc-text theme-type="primary" message="这是卡片内容"></gc-text>
+    <gc-text-card message="这是卡片内容"></gc-text-card>
+    <gc-text-card theme-type="primary" message="这是卡片内容"></gc-text-card>
   </div>
 </template>

@@ -1,15 +1,15 @@
 <template>
-  <gc-base v-bind="$props">
+  <gc-base-card v-bind="$props">
     <div slot="content">
       {{message}}
     </div>
-  </gc-base>
+  </gc-base-card>
 </template>
 
 <script>
 import create from '../utils/create'
 export default create({
-  name: 'text',
+  name: 'textCard',
   props: {
     message: String
   }

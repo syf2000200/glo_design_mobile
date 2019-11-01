@@ -60,6 +60,12 @@
           "name": "index-list",
           "isMobile": "1",
           "path": "/index-list"
+        },
+        {
+          "desc": "PullDown 下拉刷新",
+          "name": "pull-down",
+          "isMobile": "1",
+          "path": "/pull-down"
         }
       ]
     },

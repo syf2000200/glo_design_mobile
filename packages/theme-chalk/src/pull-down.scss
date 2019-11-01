@@ -1,0 +1,41 @@
+@component-namespace gc {
+    @b pulldown {
+      overflow: hidden;
+      @e content {
+        @when dropped {
+          transition: .2s;
+        }
+      }
+      @e top {
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+      }
+      @e bottom {
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+      }
+      @e top {
+        margin-top: -50px;
+      }
+      @e bottom {
+        margin-bottom: -50px;
+      }
+      @e spinner {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      @e text {
+        vertical-align: middle;
+      }
+    }
+}
+.gc-pulldown ul li {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #dddddd;
+    box-sizing: border-box;
+    text-align: center;
+}

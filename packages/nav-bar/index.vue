@@ -13,7 +13,7 @@
 <script>
 import create from '../utils/create-basic'
 export default create({
-    name: 'navbar',
+    name: 'navBar',
     props: {
         fixed: Boolean,
         title: String

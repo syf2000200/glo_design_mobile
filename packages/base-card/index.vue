@@ -14,7 +14,7 @@ import create from '../utils/create-basic'
 import VcLoading from '../loading/index.vue'
 import VcChatIcon from '../icon/index.vue'
 export default create({
-  name: 'base',
+  name: 'baseCard',
   props: {
     title: String,
     themeType: {

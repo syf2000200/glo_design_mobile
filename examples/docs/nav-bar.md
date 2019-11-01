@@ -4,7 +4,7 @@
 ---
 <!-- {.md} -->
 
-## 如何使用
+## 基础用法
 <!-- {.md} -->
 
 方式一：<!-- {.md} -->
@@ -13,10 +13,10 @@
 ::: demo
 
 ```html
-<gc-navbar title="我是标题" fixed>
+<gc-nav-bar title="我是标题" fixed>
     <gc-button slot="left" icon="arrow-left-reg" @click="handleBack">返回</gc-button>
     <gc-button slot="right" icon="more-fill"></gc-button>
-</gc-navbar>
+</gc-nav-bar>
 ```
 
 :::
