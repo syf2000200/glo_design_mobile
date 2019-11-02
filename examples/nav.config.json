@@ -66,6 +66,24 @@
           "name": "pull-down",
           "isMobile": "1",
           "path": "/pull-down"
+        },
+        {
+          "desc": "Popup 弹出窗体",
+          "name": "popup",
+          "isMobile": "1",
+          "path": "/popup"
+        },
+        {
+          "desc": "Messagebox 消息弹出窗体",
+          "name": "message-box",
+          "isMobile": "1",
+          "path": "/message-box"
+        },
+        {
+          "desc": "ActionSheet",
+          "name": "actionsheet",
+          "isMobile": "1",
+          "path": "/actionsheet"
         }
       ]
     },

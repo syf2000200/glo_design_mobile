@@ -15,6 +15,9 @@ import GcSwipeItem from './swipe-item'
 import GcTabBar from './tab-bar'
 import GcTabItem from './tab-item'
 import GcTextCard from './text-card'
+import GcPopup from './popup'
+import GcActionSheet from './actionsheet'
+import GcMessagebox  from './message-box/message-box'
 const version = '0.0.8'
 const components = [
   GcBaseCard,
@@ -31,12 +34,15 @@ const components = [
   GcSwipeItem,
   GcTabBar,
   GcTabItem,
-  GcTextCard
+  GcTextCard,
+  GcPopup,
+  GcActionSheet
 ]
 const install = Vue => {
   components.forEach(Component => {
     Vue.use(Component)
   })
+  Vue.$messagebox = Vue.prototype.$messagebox = GcMessagebox;
 };
 /* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue) {
@@ -59,7 +65,10 @@ export {
   GcSwipeItem,
   GcTabBar,
   GcTabItem,
-  GcTextCard
+  GcTextCard,
+  GcPopup,
+  GcActionSheet,
+  GcMessagebox
 }
 export default {
   install,

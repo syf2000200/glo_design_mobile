@@ -8,7 +8,7 @@
     }]"
     @click="handleClick"
     :disabled="disabled">
-    <span class="gc-button-icon" v-if="icon || $slots.icon">
+    <span class="gc-button__icon" v-if="icon || $slots.icon">
       <slot name="icon">
         <i v-if="icon" class="gc-icon__font" :class="'icon-' + icon"></i>
       </slot>
@@ -29,31 +29,30 @@ export default create({
     type: {
       type: String,
       default: 'default',
-      validator(value) {
+      validator (value) {
         return [
           'default',
           'danger',
           'primary'
-        ].indexOf(value) > -1;
+        ].indexOf(value) > -1
       }
     },
     size: {
       type: String,
       default: 'normal',
-      validator(value) {
+      validator (value) {
         return [
           'small',
           'normal',
           'large'
-        ].indexOf(value) > -1;
+        ].indexOf(value) > -1
       }
     }
   },
   methods: {
-    handleClick(evt) {
-      this.$emit('click', evt);
+    handleClick (evt) {
+      this.$emit('click', evt)
     }
-  },
+  }
 })
 </script>
-
