@@ -4,7 +4,12 @@
     class="page-header"
   >
     <div class="header-container">
-      <a href="javascript:void(0);" @click="goHome"><span class="name">GC-Desgin-Mobile</span></a>
+      <div class="logo">
+        <a href="javascript:void(0);" @click="goHome">
+          <img src="../assets/images/logo.png" alt="">
+          GLO.Design
+        </a>
+      </div>
     </div>
   </header>
 </template>
@@ -14,10 +19,10 @@ export default {
     return {}
   },
   methods: {
-    goHome() {
+    goHome () {
       window.location.href = window.location.origin
     }
-  },
+  }
 }
 </script>
 <style type="text/scss" lang="scss">
@@ -36,18 +41,22 @@ export default {
   .header-container {
     width: 1200px;
     margin: 0 auto;
-    a {
-      display: flex;
-      align-items: center;
-      height: 80px;
-    }
-    .name {
-      color: #108EE9;
-      font-size: 20px;
-      margin-left: 5px;
-    }
-    .icon {
-      width: 100px;
+    .logo {
+      float: left;
+      margin: 20px;
+      a {
+        line-height: 40px;
+        color: #333333;
+        font-size: 24px;
+        font-weight: bold;
+        img {
+          float: left;
+          max-width: 40px;
+          max-height: 40px;
+          line-height: 40px;
+          margin-right: 20px;
+        }
+      }
     }
   }
 }

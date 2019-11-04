@@ -23,11 +23,11 @@ export default {
   data () {
     return {
       isMobileShow: false,
-      currentName: null,
+      currentName: null
     }
   },
-  
-  created() {
+
+  created () {
   },
   mounted () {
     if ('onhashchange' in window) {
@@ -48,6 +48,13 @@ export default {
 
 <style lang="scss">
 @import './assets/scss/index';
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 20px;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.65);
+}
 
 .container {
   width: 1200px;
