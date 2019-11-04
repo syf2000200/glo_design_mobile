@@ -13,19 +13,6 @@
       position: relative;
       text-align: center;
       white-space: nowrap;
-      
-      & .gc-button {
-        background-color: transparent;
-        border: 0;
-        box-shadow: none;
-        color: inherit;
-        display: inline-block;
-        padding: 0;
-        font-size: inherit;
-        &::after {
-          content: none;
-        }
-      }
       @e button {
         flex: .5;
         > a {
@@ -49,4 +36,16 @@
         z-index: $z-index-normal;
       }
     }
+}
+.gc-nav .gc-button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0;
+  font-size: inherit;
+  &::after {
+    content: none;
+  }
 }
