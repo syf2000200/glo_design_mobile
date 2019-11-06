@@ -30,7 +30,7 @@ var defaults = {
 };
 
 import Vue from 'vue';
-import msgboxVue from './index.vue';
+import msgboxVue from './message-box.vue';
 
 var merge = function(target) {
   for (var i = 1, j = arguments.length; i < j; i++) {
@@ -123,6 +123,7 @@ var showNextMsg = function() {
 };
 
 var MessageBox = function(options, callback) {
+  console.log(options, callback);
   if (typeof options === 'string') {
     options = {
       title: options
