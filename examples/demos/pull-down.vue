@@ -27,3 +27,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.demo-block {
+    padding: 0;
+}
+</style>

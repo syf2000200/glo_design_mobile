@@ -59,6 +59,9 @@ h4 {
     margin: 10px 0;
 }
 .gc-button {
-  margin: 0 10px 10px;
+  margin: 10px 10px 0;
+}
+.demo-block {
+  padding: 0 10px;
 }
 </style>

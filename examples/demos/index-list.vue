@@ -21,8 +21,16 @@
     </gc-index-list>
   </div>
 </template>
+
 <script>
-export default {
-  name: 'indexList-demo'
-}
+  export default {
+    name: 'indexList-demo'
+  }
 </script>
+
+<style scoped>
+.demo-block {
+    padding: 0;
+}
+</style>
+  

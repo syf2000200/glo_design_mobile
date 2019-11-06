@@ -11,8 +11,18 @@
     </gc-base-card>
   </div>
 </template>
+
 <script>
 export default {
   name: 'baseCard-demo'
 }
 </script>
+
+<style scoped>
+.demo-wrap {
+  margin-right: 45px;
+}
+.demo-block .gc {
+  margin-left: 20px;
+}
+</style>

@@ -35,7 +35,7 @@
 <script type="text/babel">
 import { GcMessagebox } from '../../packages/index'
 export default {
-  name: 'gcMessagebox-demo',
+  name: 'messageBox-demo',
   methods: {
     openAlert () {
       GcMessagebox.alert('操作成功!', '提示')
@@ -50,6 +50,6 @@ export default {
         }
       })
     }
-  }
+  },
 }
 </script>
