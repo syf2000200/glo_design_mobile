@@ -9,7 +9,7 @@ import GcIcon from './icon'
 import GcIndexList from './index-list'
 import GcIndexSection from './index-section'
 import GcLoading from './loading'
-import GcMessagebox from './message-box/index'
+import GcMessageBox from './message-box'
 import GcNavBar from './nav-bar'
 import GcPopup from './popup'
 import GcPullDown from './pull-down'
@@ -17,6 +17,8 @@ import GcSwipe from './swipe'
 import GcSwipeItem from './swipe-item'
 import GcSwitch from './switch'
 import GcTabBar from './tab-bar'
+import GcTabContainer from './tab-container'
+import GcTabContainerItem from './tab-container-item'
 import GcTabItem from './tab-item'
 import GcTextCard from './text-card'
 const version = '0.0.8'
@@ -37,6 +39,8 @@ const components = [
   GcSwipeItem,
   GcSwitch,
   GcTabBar,
+  GcTabContainer,
+  GcTabContainerItem,
   GcTabItem,
   GcTextCard
 ]
@@ -61,7 +65,7 @@ export {
   GcIndexList,
   GcIndexSection,
   GcLoading,
-  GcMessagebox,
+  GcMessageBox,
   GcNavBar,
   GcPopup,
   GcPullDown,
@@ -69,6 +73,8 @@ export {
   GcSwipeItem,
   GcSwitch,
   GcTabBar,
+  GcTabContainer,
+  GcTabContainerItem,
   GcTabItem,
   GcTextCard
 }

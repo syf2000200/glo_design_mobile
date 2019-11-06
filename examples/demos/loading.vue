@@ -1,6 +1,6 @@
 <template>
   <div class="demo-block">
-    <gc-loading />
+    <gc-loading type="snake" />
   </div>
 </template>
 <script>

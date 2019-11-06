@@ -38,6 +38,12 @@
           "path": "/button"
         },
         {
+          "desc": "Cell 列表",
+          "name": "cell",
+          "isMobile": "1",
+          "path": "/cell"
+        },
+        {
           "desc": "Switch 开关",
           "name": "switch",
           "isMobile": "1",
@@ -108,6 +114,12 @@
           "name": "nav-bar",
           "isMobile": "1",
           "path": "/nav-bar"
+        },
+        {
+          "desc": "Tabs 切换",
+          "name": "tabs",
+          "isMobile": "1",
+          "path": "/tabs"
         },
         {
           "desc": "Swipe 轮播",

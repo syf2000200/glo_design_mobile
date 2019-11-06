@@ -33,7 +33,8 @@ export default create({
         return [
           'default',
           'danger',
-          'primary'
+          'primary',
+          'warning'
         ].indexOf(value) > -1
       }
     },

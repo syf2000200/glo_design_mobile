@@ -43,6 +43,10 @@
   }
 
   /* 临时解决的问题（scss语法使用&::绑定伪类无效的问题） */
+  .gc-switch-input:checked + .gc-switch-core {
+    border-color: $color-blue;
+    background-color: $color-blue;
+}
   .gc-switch__core:after,   .gc-switch__core:before {
     content: " ";
     position: absolute;

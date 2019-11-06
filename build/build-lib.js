@@ -9,7 +9,6 @@ const tasks = [
   'theme',
   'lint',
   'clean',
-  'build:entry',
   'dev:style',
   'lib',
   'build:style',

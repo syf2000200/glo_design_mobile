@@ -4,7 +4,6 @@
 @import "button.scss";
 @import "tab-bar.scss";
 @import "tab-item.scss";
-@import "loading.scss";
 @import "nav-bar.scss";
 @import "swipe.scss";
 @import "calendar.scss";
@@ -13,6 +12,9 @@
 @import "cell.scss";
 @import "pull-down.scss";
 @import "switch.scss";
+@import "message-box.scss";
+@import "tab-container.scss";
+@import "tab-container-item.scss";
 
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

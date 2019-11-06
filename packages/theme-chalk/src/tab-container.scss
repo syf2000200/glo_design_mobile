@@ -1,0 +1,13 @@
+@import "common/var.scss";
+@component-namespace gc {
+    @b tab-container {
+        overflow: hidden;
+        position: relative;
+        @e wrap {
+            display: flex;
+        }
+    }
+}
+.mint-tab-container .swipe-transition {
+    transition: transform 150ms ease-in-out;
+}

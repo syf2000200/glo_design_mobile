@@ -1,24 +1,34 @@
 <template>
   <div class="demo-block">
     <div class="page-button-group">
-      <gc-button size="large" type="default" @click="handleClick">default</gc-button>
-      <gc-button size="large" type="danger">danger</gc-button>
-      <gc-button size="large" type="primary">primary</gc-button>
+      <gc-button size="large" type="default" @click="handleClick">标准</gc-button>
+      <gc-button size="large" type="danger">危险</gc-button>
+      <gc-button size="large" type="primary">主要</gc-button>
+      <gc-button size="large" type="warning">警告</gc-button>
     </div>
     <div class="page-button-group">
-      <gc-button size="small" type="default">default</gc-button>
-      <gc-button size="small" type="danger">danger</gc-button>
-      <gc-button size="small" type="primary">primary</gc-button>
+      <gc-button size="normal" type="default">标准</gc-button>
+      <gc-button size="normal" type="danger">危险</gc-button>
+      <gc-button size="normal" type="primary">主要</gc-button>
+      <gc-button size="normal" type="warning">警告</gc-button>
     </div>
     <div class="page-button-group">
-      <gc-button size="large" type="default" disabled>default</gc-button>
-      <gc-button size="large" type="danger" disabled>danger</gc-button>
-      <gc-button size="large" type="primary" disabled>primary</gc-button>
+      <gc-button size="small" type="default">标准</gc-button>
+      <gc-button size="small" type="danger">危险</gc-button>
+      <gc-button size="small" type="primary">主要</gc-button>
+      <gc-button size="small" type="warning">警告</gc-button>
     </div>
     <div class="page-button-group">
-      <gc-button size="large" type="default" plain>default</gc-button>
-      <gc-button size="large" type="danger" plain>danger</gc-button>
-      <gc-button size="large" type="primary" plain>primary</gc-button>
+      <gc-button size="large" type="default" disabled>标准</gc-button>
+      <gc-button size="large" type="danger" disabled>危险</gc-button>
+      <gc-button size="large" type="primary" disabled>主要</gc-button>
+      <gc-button size="large" type="warning" disabled>警告</gc-button>
+    </div>
+    <div class="page-button-group">
+      <gc-button size="large" type="default" plain>标准</gc-button>
+      <gc-button size="large" type="danger" plain>危险</gc-button>
+      <gc-button size="large" type="primary" plain>主要</gc-button>
+      <gc-button size="large" type="warning" plain>警告</gc-button>
     </div>
   </div>
 </template>
@@ -36,7 +46,7 @@ export default {
 .page-button-group, .page-button-group>* {
     margin-bottom: 15px;
 }
-.gc-button--small {
+.gc-button--normal, .gc-button--small {
   margin-right: 10px;
 }
 </style>

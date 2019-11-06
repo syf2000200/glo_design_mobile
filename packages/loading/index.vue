@@ -1,59 +1,70 @@
 <template>
-  <div
-    :class="b([type, colorType])"
-    :style="style"
-  >
-    <span :class="b('spinner', type)">
-      <i
-        v-for="(item, index) in (type === 'spinner' ? 12 : 0)"
-        :key="index"
-      />
-      <svg
-        v-if="type === 'circular'"
-        :class="b('circular')"
-        viewBox="25 25 50 50"
-      >
-        <circle
-          cx="50"
-          cy="50"
-          r="20"
-          fill="none"
-        />
-      </svg>
-    </span>
-    <svg class="disk" viewBox="25 25 50 50">
-      <circle cx="50" cy="50" r="20" fill="none"></circle>
-    </svg>
-  </div>
+  <span><component :is="spinner"></component></span>
 </template>
 
 <script>
+const SPINNERS = [
+  'snake',
+  'double-bounce',
+  'triple-bounce',
+  'fading-circle'
+];
+const parseSpinner = function(index) {
+  if ({}.toString.call(index) === '[object Number]') {
+    if (SPINNERS.length <= index) {
+      console.warn(`'${index}' spinner not found, use the default spinner.`);
+      index = 0;
+    }
+    return SPINNERS[index];
+  }
+  if (SPINNERS.indexOf(index) === -1) {
+    console.warn(`'${index}' spinner not found, use the default spinner.`);
+    index = SPINNERS[0];
+  }
+  return index;
+};
+/**
+ * mt-spinner
+ * @module components/spinner
+ * @desc 加载动画
+ * @param {(string|number)} [type=snake] - 显示类型，传入类型名或者类型 id，可选 `snake`, `dobule-bounce`, `triple-bounce`, `fading-circle`
+ * @param {number} size - 尺寸
+ * @param {string} color - 颜色
+ *
+ * @example
+ * <mt-spinner type="snake"></mt-spinner>
+ *
+ * <!-- double-bounce -->
+ * <mt-spinner :type="1"></mt-spinner>
+ *
+ * <!-- default snake -->
+ * <mt-spinner :size="30" color="#999"></mt-spinner>
+ */
 import create from '../utils/create-basic'
-const DEFAULT_COLOR = '#2150D8'
 export default create({
   name: 'loading',
+  computed: {
+    spinner() {
+      return `spinner-${parseSpinner(this.type)}`;
+    }
+  },
+  components: {
+    SpinnerSnake: require('./snake.vue'),
+    SpinnerDoubleBounce: require('./double-bounce.vue'),
+    SpinnerTripleBounce: require('./triple-bounce.vue'),
+    SpinnerFadingCircle: require('./fading-circle.vue')
+  },
   props: {
-    size: String,
     type: {
-      type: String,
-      default: 'circular'
+      default: 0
+    },
+    size: {
+      type: Number,
+      default: 28
     },
     color: {
       type: String,
-      default: DEFAULT_COLOR
-    }
-  },
-  computed: {
-    colorType () {
-      const { color } = this
-      return color === 'white' || color === 'black' ? color : ''
-    },
-    style () {
-      return {
-        color: this.color === 'black' ? DEFAULT_COLOR : this.color,
-        width: this.size,
-        height: this.size
-      }
+      default: '#ccc'
     }
   }
 })

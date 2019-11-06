@@ -1,0 +1,7 @@
+@import "common/var.scss";
+@component-namespace gc {
+    @b tab-container-item {
+      flex-shrink: 0;
+      width: 100%;
+    }
+}

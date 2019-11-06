@@ -10,6 +10,10 @@
 </template>
 
 <style>
+.demo-block {
+    padding-left: 0;
+    padding-right: 0; 
+}
   .page-button-group {
     padding: 0 20px;
   }

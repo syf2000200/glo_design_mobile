@@ -26,6 +26,10 @@ export default {
 }
 </script>
 <style scoped>
+.demo-block {
+    padding-left: 0;
+    padding-right: 0; 
+}
 h4 {
     font-weight: normal;
     font-size: 14px;

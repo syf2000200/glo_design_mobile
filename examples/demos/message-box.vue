@@ -1,6 +1,5 @@
 <template>
   <div class="page-msgbox">
-    <h1 class="page-title">Message Box</h1>
     <div class="page-msgbox-wrapper">
       <gc-button @click.native="openAlert" size="large">打开 alert 提示框</gc-button>
       <gc-button @click.native="openConfirm" size="large">打开 confirm 提示框</gc-button>
@@ -19,7 +18,7 @@
   .page-title {
     display: inline-block;
     width: 100%;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     height: 60px;
     line-height: 60px;

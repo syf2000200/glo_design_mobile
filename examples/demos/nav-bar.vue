@@ -17,6 +17,10 @@ export default {
 }
 </script>
 <style scoped>
+.demo-block {
+    padding-left: 0;
+    padding-right: 0; 
+}
 .page-button-group, .page-button-group>* {
     margin-bottom: 15px;
 }
