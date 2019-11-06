@@ -123,7 +123,6 @@ var showNextMsg = function() {
 };
 
 var MessageBox = function(options, callback) {
-  console.log(options, callback);
   if (typeof options === 'string') {
     options = {
       title: options
