@@ -9,7 +9,7 @@ import GcIcon from './icon'
 import GcIndexList from './index-list'
 import GcIndexSection from './index-section'
 import GcLoading from './loading'
-import GcMessageBox from './message-box/message-box'
+import GcMessagebox from './message-box/index'
 import GcNavBar from './nav-bar'
 import GcPopup from './popup'
 import GcPullDown from './pull-down'
@@ -30,7 +30,6 @@ const components = [
   GcIndexList,
   GcIndexSection,
   GcLoading,
-  GcMessageBox,
   GcNavBar,
   GcPopup,
   GcPullDown,
@@ -62,7 +61,7 @@ export {
   GcIndexList,
   GcIndexSection,
   GcLoading,
-  GcMessageBox,
+  GcMessagebox,
   GcNavBar,
   GcPopup,
   GcPullDown,
