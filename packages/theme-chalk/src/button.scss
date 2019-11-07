@@ -25,6 +25,7 @@
     @e icon {
       vertical-align: middle;
       display: inline-block;
+      margin-right: 10px;
     }
     @m default {
       color: $button-default-color;
@@ -66,6 +67,7 @@
       @when plain {
         border: 1px solid $button-warning-background-color;
         background-color: transparent;
+        box-shadow: none;
         color: $button-warning-background-color;
       }
     }
@@ -85,6 +87,9 @@
     }
     @when disabled {
       opacity: .6;
+    }
+    @when noshadow {
+      box-shadow: none;
     }
   }
 }

@@ -5,6 +5,13 @@
       <gc-button size="large" type="danger">危险</gc-button>
       <gc-button size="large" type="primary">主要</gc-button>
       <gc-button size="large" type="warning">警告</gc-button>
+      <gc-button size="large" type="warning" icon="barchart-bold">带有图标的警告按钮</gc-button>
+    </div>
+    <div class="page-button-group">
+      <gc-button size="large" type="default" @click="handleClick" noshadow>标准</gc-button>
+      <gc-button size="large" type="danger" noshadow>危险</gc-button>
+      <gc-button size="large" type="primary" noshadow>主要</gc-button>
+      <gc-button size="large" type="warning" noshadow>警告</gc-button>
     </div>
     <div class="page-button-group">
       <gc-button size="normal" type="default">标准</gc-button>

@@ -19,7 +19,7 @@
           <span v-text="value"></span>
         </slot>
       </div>
-      <i v-if="isLink" class="gc-cell__allow-right"></i>
+      <gc-icon v-if="isLink" name="arrow-bold" :size="16" color="#cccccc"></gc-icon>
     </div>
     <div class="gc-cell__right">
       <slot name="right"></slot>

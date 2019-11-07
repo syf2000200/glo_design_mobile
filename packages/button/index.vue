@@ -4,13 +4,14 @@
     class="gc-button"
     :class="['gc-button--' + type, 'gc-button--' + size, {
       'is-disabled': disabled,
-      'is-plain': plain
+      'is-plain': plain,
+      'is-noshadow': noshadow
     }]"
     @click="handleClick"
     :disabled="disabled">
     <span class="gc-button__icon" v-if="icon || $slots.icon">
       <slot name="icon">
-        <i v-if="icon" class="gc-icon__font" :class="'icon-' + icon"></i>
+        <gc-icon v-if="icon" :name="icon"></gc-icon>
       </slot>
     </span>
     <label class="gc-button-text"><slot></slot></label>
@@ -26,6 +27,7 @@ export default create({
     disabled: Boolean,
     nativeType: String,
     plain: Boolean,
+    noshadow: Boolean,
     type: {
       type: String,
       default: 'default',
