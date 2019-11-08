@@ -13,7 +13,7 @@
 
     <gc-radio
       class="page-part"
-      title="第二个单选框列表"
+      title="单选框列表"
       v-model="value2"
       :options="options2" />
     <div>
@@ -65,5 +65,8 @@ export default {
     .demo-block {
         padding-left: 0;
         padding-right: 0;
+    }
+    .page-title {
+        padding: 0 10px;
     }
 </style>
