@@ -1,29 +1,31 @@
 <template>
   <div class="gc-search">
-    <div class="gc-searchbar">
-      <div class="gc-searchbar-inner">
-        <gc-icon name="search-bold" :symbol="false" color="#666" size="24"></gc-icon>
-        <input
-            ref="input"
-            @click="visible = true"
-            type="search"
-            v-model="currentValue"
-            :placeholder="placeholder"
-            class="gc-searchbar-core">
-      </div>
-      <gc-icon
-        :symbol="false" color="#666"
-        class="gc-searchbar-cancel"
-        @click="visible = false, currentValue = ''"
-        v-show="visible"
-        name="close-circlefill" size="24"></gc-icon>
+    <div class="search-wrap">
+        <div class="gc-searchbar">
+            <div class="gc-searchbar-inner">
+                <gc-icon name="search-bold" :symbol="false" color="#666" size="24"></gc-icon>
+                <input
+                    ref="input"
+                    @click="visible = true"
+                    type="search"
+                    v-model="currentValue"
+                    :placeholder="placeholder"
+                    class="gc-searchbar-core">
+            </div>
+            <gc-icon
+                :symbol="false" color="#666"
+                class="gc-searchbar-cancel"
+                @click="visible = false, currentValue = ''"
+                v-show="visible"
+                name="close-circlefill" size="24"></gc-icon>
+        </div>
     </div>
     <div class="gc-search-list" v-show="show || currentValue">
-      <div class="gc-search-list-warp">
-        <slot>
-          <gc-cell v-for="(item, index) in result" :key="index" :title="item"></gc-cell>
-        </slot>
-      </div>
+        <div class="gc-search-list-warp">
+            <slot>
+            <gc-cell v-for="(item, index) in result" :key="index" :title="item"></gc-cell>
+            </slot>
+        </div>
     </div>
   </div>
 </template>
