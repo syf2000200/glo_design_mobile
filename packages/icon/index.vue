@@ -3,7 +3,7 @@
     <svg v-if="symbol" class="gc-icon__symbol" aria-hidden="true">
       <use :xlink:href="`#icon-${name}`"></use>
     </svg>
-    <i v-else class="gc-icon__font" :class="'icon-' + name" :style="{ color: color }"></i>
+    <i v-else class="gc-icon__font iconfont" :class="'icon-' + name" :style="{ color: color }"></i>
   </span>
 </template>
 

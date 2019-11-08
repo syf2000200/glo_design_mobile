@@ -14,7 +14,7 @@
   "scripts": {
     "init": "npm install commitizen -g && commitizen init cz-conventional-changelog --save-dev --save-exact && npm run theme",
     "theme": "npm install && cd ./packages/theme-chalk && npm install",
-    "dev": "npm run build:entry && vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name gc --dest lib packages/index.js",
     "clean": "rimraf lib && rimraf packages/*/lib",

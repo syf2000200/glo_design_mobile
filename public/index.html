@@ -16,7 +16,7 @@
         <div class="menu">
           <ul>
             <li>
-              <a href="javascript:;" class="goPcPage">设计规范</a>
+              <a href="javascript:;" class="goPcPage">PC设计规范</a>
             </li>
             <li>
               <a href="javascript:;" class="goMobilePage">Mobile组件</a>
@@ -100,7 +100,7 @@
       $(document).ready(function() {
         $('.goPcPage').click(function() {
           console.log(window.location)
-          window.location.href = window.location + 'pc/index.html'
+          window.open(window.location + 'pc/index.html', '_blank');
         })
         $('.goMobilePage').click(function() {
           console.log(window.location)

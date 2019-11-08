@@ -13,7 +13,7 @@
 ::: demo
 
 ```html
-<gc-icon name="arrow-bold" :size="24"></gc-icon>
+<gc-icon name="arrow-bold" size="24"></gc-icon>
 ```
 
 :::

@@ -8,8 +8,9 @@ import GcCell from './cell'
 import GcIcon from './icon'
 import GcIndexList from './index-list'
 import GcIndexSection from './index-section'
+import GcInput from './input'
 import GcLoading from './loading'
-import GcMessageBox from './message-box'
+import GcMessageBox from './message-box/index'
 import GcNavBar from './nav-bar'
 import GcPopup from './popup'
 import GcPullDown from './pull-down'
@@ -21,6 +22,8 @@ import GcTabContainer from './tab-container'
 import GcTabContainerItem from './tab-container-item'
 import GcTabItem from './tab-item'
 import GcTextCard from './text-card'
+import GcSearch from './search'
+import GcRadio from './radio'
 const version = '0.0.8'
 const components = [
   GcActionsheet,
@@ -31,6 +34,7 @@ const components = [
   GcIcon,
   GcIndexList,
   GcIndexSection,
+  GcInput,
   GcLoading,
   GcNavBar,
   GcPopup,
@@ -42,7 +46,9 @@ const components = [
   GcTabContainer,
   GcTabContainerItem,
   GcTabItem,
-  GcTextCard
+  GcTextCard,
+  GcSearch,
+  GcRadio,
 ]
 const install = Vue => {
   components.forEach(Component => {
@@ -64,6 +70,7 @@ export {
   GcIcon,
   GcIndexList,
   GcIndexSection,
+  GcInput,
   GcLoading,
   GcMessageBox,
   GcNavBar,
@@ -76,7 +83,9 @@ export {
   GcTabContainer,
   GcTabContainerItem,
   GcTabItem,
-  GcTextCard
+  GcTextCard,
+  GcSearch,
+  GcRadio,
 }
 export default {
   install,
