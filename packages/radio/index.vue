@@ -1,7 +1,7 @@
 <template>
   <div class="gc-radiolist" @change="$emit('change', currentValue)">
     <label class="gc-radiolist__title" v-text="title"></label>
-    <gc-cell v-for="option in options" :key="option">
+    <gc-cell v-for="option in options" :key="option.key">
       <label class="gc-radiolist__label" slot="title">
         <span
           :class="{'is-right': align === 'right'}"
