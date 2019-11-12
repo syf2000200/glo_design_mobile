@@ -49,6 +49,8 @@
       }
       @e text {
         vertical-align: middle;
+        font-size: 14px;
+        color: $--color-black;
       }
       @e label {
         color: #888;
@@ -93,4 +95,7 @@
         transform: translateY(-50%) rotate(45deg);
       }
     }
+  }
+  .gc-cell .gc-icon {
+      margin-right: 5px;
   }

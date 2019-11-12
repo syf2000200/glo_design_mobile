@@ -1,0 +1,61 @@
+@import "common/var.scss";
+.gc-input {
+    border-bottom: $--border-base;
+    height: 44px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 44px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+
+    .gc-input__label {
+    font-size: 14px;
+    line-height: 20px;
+    }
+
+    input {
+        font-size: 14px;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+        appearance: none;
+    }
+    input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #333;
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+}
+
+.gc-input__clear {
+    position: absolute;
+    top: 14px;
+    right: 9px;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    visibility: hidden;
+    &.active {
+    visibility: visible;
+    }
+}
+
+.item-floating-label {
+    height: 75px;
+    background: #FFF;
+    .input-label {
+    padding-top: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    }
+}

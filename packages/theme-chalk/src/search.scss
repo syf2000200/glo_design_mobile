@@ -1,0 +1,44 @@
+@import "common/var.scss";
+.gc-search {
+    height: 40px;
+    padding: 10px 0;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+}
+.gc-searchbar {
+    display: flex;
+    background-color: #EEEEEE;
+    width: 100%;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.gc-searchbar-inner {
+    flex: 2;
+}
+.gc-searchbar input {
+    border: 0;
+    background: transparent;
+    outline: none;
+    height: 40px;
+}
+.gc-searchbar-cancel {
+    line-height: 40px;
+}
+.gc-search input::-webkit-search-cancel-button{
+    display: none;
+}
+.gc-search .gc-icon {
+    margin-right: 5px;
+}
+.gc-search-list {
+    position: relative;
+    z-index: 99;
+    top: -1px;
+}
+.search-wrap {
+    padding: 0 10px;
+    position: relative;
+    z-index: 999;
+    background: #fff;
+}

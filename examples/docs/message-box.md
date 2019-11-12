@@ -26,7 +26,7 @@ GcMessagebox({
   showCancelButton: true
 });
 ```
-此外，`MessageBox` 还提供了 `alert`、`confirm` 和 `prompt` 三个方法，它们都返回一个 Promise
+`MessageBox` 还提供了 `alert`、`confirm` 和 `prompt` 三个方法，它们都返回一个 Promise
 ```js
 GcMessagebox.alert(message, title);
 ```

@@ -136,6 +136,30 @@
       ]
     },
     {
+      "desc": "表单组件",
+      "isMobile": "1",
+      "items": [
+        {
+          "desc": "Input 输入框",
+          "isMobile": "1",
+          "name": "input",
+          "path": "/input"
+        },
+        {
+          "desc": "Search 搜索框",
+          "isMobile": "1",
+          "name": "search",
+          "path": "/search"
+        },
+        {
+          "desc": "Radio 单选框",
+          "isMobile": "1",
+          "name": "radio",
+          "path": "/radio"
+        }
+      ]
+    },
+    {
       "desc": "卡片组件",
       "isMobile": "1",
       "items": [

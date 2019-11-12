@@ -7,7 +7,7 @@
     <div class="gc-cell__wrapper">
       <div class="gc-cell__title">
         <slot name="icon">
-          <gc-icon v-if="icon" :name="icon" :size="24"></gc-icon>
+          <gc-icon v-if="icon" :symbol="false" :name="icon" :size="24"></gc-icon>
         </slot>
         <slot name="title">
           <span class="gc-cell__text" v-text="title"></span>
@@ -19,7 +19,7 @@
           <span v-text="value"></span>
         </slot>
       </div>
-      <gc-icon v-if="isLink" name="arrow-bold" :size="16" color="#cccccc"></gc-icon>
+      <gc-icon v-if="isLink" :symbol="false" name="arrow-bold" :size="16" color="#cccccc"></gc-icon>
     </div>
     <div class="gc-cell__right">
       <slot name="right"></slot>
@@ -60,23 +60,23 @@ export default create({
     value: {}
   },
   computed: {
-    href() {
+    href () {
       if (this.to && !this.added && this.$router) {
-        const resolved = this.$router.match(this.to);
-        if (!resolved.matched.length) return this.to;
+        const resolved = this.$router.match(this.to)
+        if (!resolved.matched.length) return this.to
         this.$nextTick(() => {
-          this.added = true;
-          this.$el.addEventListener('click', this.handleClick);
-        });
-        return resolved.fullPath || resolved.path;
+          this.added = true
+          this.$el.addEventListener('click', this.handleClick)
+        })
+        return resolved.fullPath || resolved.path
       }
-      return this.to;
+      return this.to
     }
   },
   methods: {
-    handleClick($event) {
-      $event.preventDefault();
-      this.$router.push(this.href);
+    handleClick ($event) {
+      $event.preventDefault()
+      this.$router.push(this.href)
     }
   }
 })

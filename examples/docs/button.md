@@ -13,21 +13,25 @@
 ::: demo
 
 ```html
-<gc-button size="large" type="default">default</gc-button>
-<gc-button size="large" type="danger">danger</gc-button>
-<gc-button size="large" type="primary">primary</gc-button>
+<gc-button size="large" type="default" @click="handleClick">标准</gc-button>
+<gc-button size="large" type="danger">危险</gc-button>
+<gc-button size="large" type="primary">主要</gc-button>
+<gc-button size="large" type="warning">警告</gc-button>
+<gc-button size="large" type="warning" icon="barchart-bold">带有图标的警告按钮</gc-button>
 
-<gc-button size="small" type="default">default</gc-button>
-<gc-button size="small" type="danger">danger</gc-button>
-<gc-button size="small" type="primary">primary</gc-button>
+<gc-button size="large" type="default" @click="handleClick" noshadow>标准</gc-button>
+<gc-button size="large" type="danger" noshadow>危险</gc-button>
 
-<gc-button size="large" type="default" disabled>default</gc-button>
-<gc-button size="large" type="danger" disabled>danger</gc-button>
-<gc-button size="large" type="primary" disabled>primary</gc-button>
+<gc-button size="normal" type="default">标准</gc-button>
 
-<gc-button size="large" type="default" plain>default</gc-button>
-<gc-button size="large" type="danger" plain>danger</gc-button>
-<gc-button size="large" type="primary" plain>primary</gc-button>
+<gc-button size="small" type="default">标准</gc-button>
+
+<gc-button size="large" type="default" disabled>标准</gc-button>
+<gc-button size="large" type="danger" disabled>危险</gc-button>
+
+<gc-button size="large" type="danger" plain>危险</gc-button>
+<gc-button size="large" type="primary" plain>主要</gc-button>
+
 ```
 
 :::
