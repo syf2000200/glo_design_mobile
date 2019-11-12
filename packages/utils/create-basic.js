@@ -1,6 +1,5 @@
 /**
- * Created by sunyf-c on 2019/11/2.
- * 创建全局自定义组件
+ * Create a basic component with common options
  */
 import bem from '../mixins/bem'
 import { isDef, camelize } from '.'

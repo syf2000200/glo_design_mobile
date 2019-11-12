@@ -1,6 +1,7 @@
 /* eslint-disable */
 // This file is auto gererated by build/build-entry.js
 import GcActionsheet from './actionsheet'
+import GcAreaSelect from './area-select'
 import GcBaseCard from './base-card'
 import GcButton from './button'
 import GcCalendar from './calendar'
@@ -8,9 +9,8 @@ import GcCell from './cell'
 import GcIcon from './icon'
 import GcIndexList from './index-list'
 import GcIndexSection from './index-section'
-import GcInput from './input'
 import GcLoading from './loading'
-import GcMessageBox from './message-box/index'
+import GcMessageBox from './message-box'
 import GcNavBar from './nav-bar'
 import GcPopup from './popup'
 import GcPullDown from './pull-down'
@@ -22,11 +22,10 @@ import GcTabContainer from './tab-container'
 import GcTabContainerItem from './tab-container-item'
 import GcTabItem from './tab-item'
 import GcTextCard from './text-card'
-import GcSearch from './search'
-import GcRadio from './radio'
 const version = '0.0.8'
 const components = [
   GcActionsheet,
+  GcAreaSelect,
   GcBaseCard,
   GcButton,
   GcCalendar,
@@ -34,8 +33,8 @@ const components = [
   GcIcon,
   GcIndexList,
   GcIndexSection,
-  GcInput,
   GcLoading,
+  // GcMessageBox,
   GcNavBar,
   GcPopup,
   GcPullDown,
@@ -46,9 +45,7 @@ const components = [
   GcTabContainer,
   GcTabContainerItem,
   GcTabItem,
-  GcTextCard,
-  GcSearch,
-  GcRadio,
+  GcTextCard
 ]
 const install = Vue => {
   components.forEach(Component => {
@@ -63,6 +60,7 @@ export {
   install,
   version,
   GcActionsheet,
+  GcAreaSelect,
   GcBaseCard,
   GcButton,
   GcCalendar,
@@ -70,7 +68,6 @@ export {
   GcIcon,
   GcIndexList,
   GcIndexSection,
-  GcInput,
   GcLoading,
   GcMessageBox,
   GcNavBar,
@@ -83,9 +80,7 @@ export {
   GcTabContainer,
   GcTabContainerItem,
   GcTabItem,
-  GcTextCard,
-  GcSearch,
-  GcRadio,
+  GcTextCard
 }
 export default {
   install,

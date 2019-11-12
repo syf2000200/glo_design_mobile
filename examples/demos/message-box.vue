@@ -32,26 +32,23 @@
 </style>
 
 <script type="text/babel">
-import { GcMessageBox } from '../../packages/index'
+import { GcMessagebox } from '../../packages/index'
 export default {
   name: 'messageBox-demo',
   methods: {
     openAlert () {
-      GcMessageBox.alert('操作成功!', '提示')
+      GcMessagebox.alert('操作成功!', '提示')
     },
     openConfirm () {
-      GcMessageBox.confirm('确定执行此操作?', '提示')
+      GcMessagebox.confirm('确定执行此操作?', '提示')
     },
     openPrompt () {
-      GcMessageBox.prompt(' ', '请输入姓名').then(({ value }) => {
+      GcMessagebox.prompt(' ', '请输入姓名').then(({ value }) => {
         if (value) {
-          GcMessageBox.alert(`你的名字是 ${value}`, '输入成功')
+          GcMessagebox.alert(`你的名字是 ${value}`, '输入成功')
         }
       })
     }
-  },
-  mounted() {
-    console.log(GcMessageBox)
   },
 }
 </script>

@@ -84,8 +84,7 @@
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | icon     | 设置图标  | string  | -          |    -     |
-| title    | 设置标题  | String  | -           |    -    |
-| value    | 设置内容  | *  | -           | - |
-| label    | 设置备注信息 | string  |     -     | - |
-| is-link | 设置链接，搭配 to 属性使用 | boolean  |     -     | - |
-| to | 跳转链接 | String  |     -     | - |
+| plain    | ghost模式  | boolean  | -           |    -    |
+| type    | 按钮类型  | string  | -           | default |
+| size    | 按钮尺寸 | string  |          | normal |
+| disabled | 按钮禁用 | boolean  |          | normal |

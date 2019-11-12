@@ -96,6 +96,12 @@
           "name": "actionsheet",
           "isMobile": "1",
           "path": "/actionsheet"
+        },
+        {
+          "desc": "AreaSelect 地区选择",
+          "name": "area-select",
+          "isMobile": "1",
+          "path": "/area-select"
         }
       ]
     },
@@ -126,30 +132,6 @@
           "name": "swipe",
           "isMobile": "1",
           "path": "/swipe"
-        }
-      ]
-    },
-    {
-      "desc": "表单组件",
-      "isMobile": "1",
-      "items": [
-        {
-          "desc": "Input 输入框",
-          "isMobile": "1",
-          "name": "input",
-          "path": "/input"
-        },
-        {
-          "desc": "Search 搜索框",
-          "isMobile": "1",
-          "name": "search",
-          "path": "/search"
-        },
-        {
-          "desc": "Radio 单选框",
-          "isMobile": "1",
-          "name": "radio",
-          "path": "/radio"
         }
       ]
     },
