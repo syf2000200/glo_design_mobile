@@ -1,6 +1,7 @@
 /* eslint-disable */
 // This file is auto gererated by build/build-entry.js
 import GcActionsheet from './actionsheet'
+import GcAreaSelect from './area-select'
 import GcBaseCard from './base-card'
 import GcButton from './button'
 import GcCalendar from './calendar'
@@ -24,6 +25,7 @@ import GcTextCard from './text-card'
 const version = '0.0.8'
 const components = [
   GcActionsheet,
+  GcAreaSelect,
   GcBaseCard,
   GcButton,
   GcCalendar,
@@ -32,6 +34,7 @@ const components = [
   GcIndexList,
   GcIndexSection,
   GcLoading,
+  // GcMessageBox,
   GcNavBar,
   GcPopup,
   GcPullDown,
@@ -57,6 +60,7 @@ export {
   install,
   version,
   GcActionsheet,
+  GcAreaSelect,
   GcBaseCard,
   GcButton,
   GcCalendar,

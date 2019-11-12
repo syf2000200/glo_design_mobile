@@ -5,7 +5,7 @@
       <div class="refresh" @click="refreshIFrame"></div>
     </div>
     <div class="iframe-wrap">
-      <iframe :src="baseOrigin+'/mobile.html#/'+currentName" id="mobileIframe" frameborder="0"></iframe>
+      <iframe :src="baseOrigin+'/mobile.html#/'+currentName" id="mobileIframe" frameborder="0" seamless></iframe>
     </div>
     <!-- <gc-icon
       name="close"
@@ -27,7 +27,7 @@ export default {
   },
   props: {
     url: String,
-    show: Boolean,
+    show: Boolean
   },
   methods: {
     refreshIFrame () {
@@ -37,29 +37,28 @@ export default {
       window.open(this.baseOrigin + '/mobile.html#/index')
     }
   },
-  mounted() {
+  mounted () {
     console.log(this.baseOrigin)
   },
   watch: {
     $route (to, from) {
       const newArr = []
-      
+
       Nav['组件'].forEach(element => {
-        for(let i=0; i<element.items.length; i++) {
+        for (let i = 0; i < element.items.length; i++) {
           newArr.push(element.items[i].name)
         }
-      });
-      for(let i=0; i<newArr.length; i++) {
-        if(newArr[i] == to.name) {
+      })
+      for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] == to.name) {
           this.currentName = to.name
           return
-        }
-        else {
+        } else {
           this.currentName = 'index'
         }
       }
-    },
-  },
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>

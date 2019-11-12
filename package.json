@@ -30,6 +30,7 @@
   "dependencies": {
     "array-find-index": "^1.0.2",
     "dayjs": "^1.8.16",
+    "pinyin": "^2.9.0",
     "vue": "^2.5.22",
     "vue-mobile-calendar": "^3.3.0"
   },

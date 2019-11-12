@@ -96,6 +96,12 @@
           "name": "actionsheet",
           "isMobile": "1",
           "path": "/actionsheet"
+        },
+        {
+          "desc": "AreaSelect 地区选择",
+          "name": "area-select",
+          "isMobile": "1",
+          "path": "/area-select"
         }
       ]
     },
