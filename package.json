@@ -1,6 +1,6 @@
 {
   "name": "glo_design_mobile",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "GC移动端组件库",
   "main": "lib/gc.common.js",
   "style": "lib/theme-chalk/index.h5.css",

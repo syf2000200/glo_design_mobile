@@ -150,8 +150,8 @@ export default create({
   },
   mounted () {
     if (this.value) {
-      this.openChildren()
     }
+    this.openChildren()
   }
 })
 </script>
