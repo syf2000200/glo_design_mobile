@@ -10,6 +10,7 @@
 @b gc-icon {
   display: inline-block;
   line-height: 1;
+  vertical-align: middle;
   @e symbol {
     position: relative;
     width: 1em;
@@ -20,7 +21,9 @@
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-  @e font {}
+  @e font {
+    display: block;
+  }
 }
 .gc-icon__symbol {
   position: relative;

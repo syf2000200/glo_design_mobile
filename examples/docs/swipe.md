@@ -10,8 +10,6 @@
 方式一：<!-- {.md} -->
 通过<!-- {.md} -->`gc-swipe`标签来引用
 
-::: demo
-
 ```html
 <gc-swipe :auto="4000">
   <gc-swipe-item>1</gc-swipe-item>
@@ -20,20 +18,14 @@
 </gc-swipe>
 ```
 
-::: 
-
 方式二：<!-- {.md} -->
 
-::: demo
 ```js
-
 import { Swipe, SwipeItem } from 'glo_design_mobile'
 
 ```
-::: 
 
 <!-- {.md} -->
-::: demo
 ```html
 <template>
   <div>
@@ -45,10 +37,8 @@ import { Swipe, SwipeItem } from 'glo_design_mobile'
   </div>
 </template>
 ```
-:::
 
 <!-- {.md} -->
-::: demo
 ```js
 <script>
   export default {
@@ -59,7 +49,6 @@ import { Swipe, SwipeItem } from 'glo_design_mobile'
   }
 </script>
 ```
-:::
 <!-- {.md} -->
 
 ## API

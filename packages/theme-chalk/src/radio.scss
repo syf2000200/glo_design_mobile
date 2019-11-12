@@ -1,0 +1,72 @@
+@import "common/var.scss";
+
+@component-namespace gc {
+    @b radiolist {
+      
+      @e label {
+        display: block;
+        padding: 0 10px;
+      }
+      @e title {
+        font-size: 12px;
+        margin: 8px;
+        display: block;
+        color: $radio-title-color;
+      }
+    }
+    @b radio {
+      @when right {
+        float: right;
+      }
+      @e label {
+        vertical-align: middle;
+        margin-left: 6px;
+      }
+      @e input {
+        display: none;
+      }
+      @e core {
+        box-sizing: border-box;
+        display: inline-block;
+        background-color: $color-white;
+        border-radius: 100%;
+        border: 1px solid #ccc;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+ .gc-radiolist .gc-cell {
+    padding: 0;
+  }
+  .gc-radio__core:after {
+    content: " ";
+    border-radius: 100%;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s,-webkit-transform .2s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.gc-radio__input:checked+.gc-radio__core {
+    background-color: #26a2ff;
+    border-color: #26a2ff;
+}
+.gc-radio__input:checked+.gc-radio__core:after {
+    background-color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.gc-radio__input[disabled]+.gc-radio__core {
+    background-color: #d9d9d9;
+    border-color: #ccc;
+}
