@@ -11,6 +11,10 @@
   flex: 1;
   display: flex;
   font-size: 12px;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 40px);
+  top: 40px;
   & > .left_panel {
     width: 100px;
     height: 100%;
