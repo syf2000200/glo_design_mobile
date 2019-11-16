@@ -1,0 +1,25 @@
+@import "common/var.scss";
+.loading-container {
+  .loading {
+    padding: 15px;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+  }
+
+  .spinner svg {
+    width: 28px;
+    height: 28px;
+    stroke: #FFF;
+    fill: #FFF;
+  }
+
+  .tips {
+    font-size: $font-size-base;
+    line-height: 14px;
+  }
+}

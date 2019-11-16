@@ -18,7 +18,7 @@
         align-items: center;
         box-sizing: border-box;
         display: flex;
-        font-size: 16px;
+        font-size: $font-size-base;
         line-height: 1;
         min-height: inherit;
         overflow: hidden;
@@ -38,13 +38,13 @@
       }
       @e text {
         vertical-align: middle;
-        font-size: 14px;
+        font-size: $font-size-large;
         color: $--color-black;
       }
       @e label {
         color: #888;
         display: block;
-        font-size: 12px;
+        font-size: $font-size-small;
         margin-top: 6px;
       }
       img {
@@ -87,4 +87,11 @@
   }
   .gc-cell .gc-icon {
       margin-right: 5px;
+  }
+  .gc-cell.is-full .gc-cell__wrapper{
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
   }

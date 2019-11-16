@@ -21,9 +21,6 @@
   </transition>
 </template>
 
-<style>
-
-</style>
 <script type="text/babel">
 import pinyin from 'pinyin'
 import areaData from './list'

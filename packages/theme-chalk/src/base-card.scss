@@ -12,7 +12,7 @@
     height: 16px;
     margin-bottom: 16px;
     @e label {
-      font-size: $--font-size-small;
+      font-size: $font-size-small;
       color: $--color-danger;
       background-color: $--color-danger-light;
       height: 48px;
@@ -38,8 +38,8 @@
     right: 0px;
     bottom: -42px;
     margin-top: 5px;
-    font-size: $--font-size-small;
-    font-weight: $--font-weight-primary;
+    font-size: $font-size-small;
+    font-weight: $font-weight-primary;
     .is-primary {
       color: $--color-primary;
     }
@@ -85,16 +85,16 @@
     border-radius: $--border-radius-big;
   }
   @e title {
-    font-size: $--font-size-large;
-    font-weight: $--font-weight-bold;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
     line-height: 48px;
     color: $--color-text-primary;
     margin-bottom: 24px;
   }
   @e content {
-    font-size: $--font-size-base;
+    font-size: $font-size-base;
     @e footer {
-      font-size: $--font-size-base;
+      font-size: $font-size-base;
     }
   }
   @e bg-image {
@@ -109,14 +109,14 @@
     }
   }
   @e footer {
-    font-size: $--font-size-base;
+    font-size: $font-size-base;
   }
   @e footer-content {
     margin-top: 24px;
     padding-top: 24px;
     border-top: 1px solid $--border-color-base;
     display: flex;
-    font-size: $--font-size-base;
+    font-size: $font-size-base;
     @when center {
       text-align: center;
       justify-content: space-between;

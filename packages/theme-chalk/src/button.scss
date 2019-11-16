@@ -7,21 +7,12 @@
     box-sizing: border-box;
     color: inherit;
     display: block;
-    font-size: 16px;
-    height: 41px;
+    font-size: $font-size-large;
+    height: $button-height;
     outline: 0;
     overflow: hidden;
     position: relative;
     text-align: center;
-    &::after {
-      background-color: #000;
-      content: " ";
-      opacity: 0;
-      position: absolute;
-    }
-    &:not(.is-disabled):active::after {
-      opacity: .4;
-    }
     @e icon {
       vertical-align: middle;
       display: inline-block;
@@ -83,7 +74,7 @@
       display: inline-block;
       padding: 0 12px;
       height: 24px;
-      font-size: 14px;
+      font-size: $font-size-base;
     }
     @when disabled {
       opacity: .6;
@@ -91,5 +82,24 @@
     @when noshadow {
       box-shadow: none;
     }
+    @when radius {
+      border-radius: $button-radius-full;
+    }
   }
+}
+.gc-button__icon .gc-icon {
+  display: block;
+}
+.gc-button:active {
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+.gc-button::after {
+  background-color: #000;
+  content: " ";
+  opacity: 0;
+  position: absolute;
+}
+.gc-button:not(.is-disabled):active::after {
+  opacity: .4;
 }

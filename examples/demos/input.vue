@@ -2,7 +2,7 @@
   <div class="demo-block">
     <!-- type: text, password, email, tel -->
     <div class="item item-divider">
-    有标签: {{username}}
+    值: {{username}}
     </div>
     <gc-input type="text" v-model="username" placeholder="用户名" label="用户名"></gc-input>
     <gc-input type="password" v-model="password" placeholder="密码" label="密码"></gc-input>

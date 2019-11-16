@@ -9,45 +9,6 @@
   </transition>
 </template>
 
-<style>
-  .gc-actionsheet {
-    position: fixed;
-    background: #e0e0e0;
-    width: 100%;
-    text-align: center;
-    bottom: 0;
-    left: 50%;
-    max-height: 100%;
-    overflow-y: auto;
-    transform: translate3d(-50%, 0, 0);
-    backface-visibility: hidden;
-    transition: transform .3s ease-out;
-  }
-  .gc-actionsheet .gc-actionsheet-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .gc-actionsheet .gc-actionsheet-listitem {
-    border-bottom: solid 1px #e0e0e0;
-  }
-  .gc-actionsheet .gc-actionsheet-listitem, .gc-actionsheet-button {
-    display: block;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    font-size: 18px;
-    color: #333;
-    background-color: #fff;
-  }
-  .gc-actionsheet .gc-actionsheet-listitem:active, .gc-actionsheet-button:active {
-    background-color: #f0f0f0;
-  }
-  .actionsheet-float-enter,
-  .actionsheet-float-leave-active {
-    transform: translate3d(-50%, 100%, 0);
-  }
-</style>
 <script type="text/babel">
 import Popup from '../utils/popup'
 import '../popup/popup.css'

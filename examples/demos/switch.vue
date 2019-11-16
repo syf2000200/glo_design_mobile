@@ -10,7 +10,7 @@ export default {
   name: 'switch-demo',
   data() {
     return {
-      value: false,
+      value: true,
       value1: false,
     }
   },

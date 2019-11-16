@@ -73,9 +73,7 @@ import { GcButton } from 'glo_design_mobile'
 | 参数      | 说明    | 类型      | 可选值       | 默认值   |
 |---------- |-------- |---------- |-------------  |-------- |
 | icon     | 设置图标  | string  | -          |    -     |
-| plain    | ghost模式  | boolean  | true, false  |    false    |
+| plain    | ghost模式  | boolean  | -           |    -    |
 | type    | 按钮类型  | string  | -           | default |
 | size    | 按钮尺寸 | string  |          | normal |
-| disabled | 按钮禁用 | boolean  |     true, false     | normal |
-| noshadow | 阴影效果 | boolean  |     true, false     | true |
-| radius | 圆角效果 | boolean  |     true, false     | false |
+| disabled | 按钮禁用 | boolean  |          | normal |

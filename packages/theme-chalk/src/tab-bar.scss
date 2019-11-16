@@ -18,8 +18,43 @@
       z-index: $z-index-normal;
       box-shadow: 0 -3px 6px #dddddd;
     }
-    .gc-tab-item.is-selected {
-      background-color: $tabbar-tab-item-selected-background-color;
-      color: $tabbar-tab-item-selected-color;
+    .gc-tab-item.is-selected:after {
+      background: #ffffff;
     }
+    .gc-tab-item.float_left:after {
+      -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: scaleY(1.23) perspective(30px) rotateX(10deg);
+      transform: scaleY(1.23) perspective(30px) rotateX(10deg);
+      -webkit-border-radius: 0 10px 0 0;
+      border-radius: 0 10px 0 0;
+    }
+    .gc-tab-item.float_right:after {
+      -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+      transform-origin: bottom right;
+      -webkit-transform: scaleY(1.23) perspective(30px) rotateX(10deg);
+      transform: scaleY(1.23) perspective(30px) rotateX(10deg);
+      -webkit-border-radius: 10px 0 0 0;
+      border-radius: 10px 0 0 0;
+    }
+    .gc-tab-item:after {
+      content: '';
+      display: block;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      background: #E8E9EB;
+      z-index: -1;
+      -webkit-transform: scaleY(1.5) perspective(30px) rotateX(20deg);
+      transform: scaleY(1.5) perspective(30px) rotateX(20deg);
+      -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+      transform-origin: bottom;
+      -webkit-border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 0 0;
+  }
 }

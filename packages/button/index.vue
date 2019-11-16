@@ -2,16 +2,19 @@
   <button
     :type="nativeType"
     class="gc-button"
-    :class="['gc-button--' + type, 'gc-button--' + size, {
+    :class="[
+      'gc-button--' + type, 
+      'gc-button--' + size, {
       'is-disabled': disabled,
       'is-plain': plain,
-      'is-noshadow': noshadow
+      'is-noshadow': noshadow,
+      'is-radius': radius
     }]"
     @click="handleClick"
     :disabled="disabled">
     <span class="gc-button__icon" v-if="icon || $slots.icon">
       <slot name="icon">
-        <gc-icon v-if="icon" :name="icon"></gc-icon>
+        <gc-icon v-if="icon" :name="icon" :symbol="false"></gc-icon>
       </slot>
     </span>
     <label class="gc-button-text"><slot></slot></label>
@@ -28,6 +31,10 @@ export default create({
     nativeType: String,
     plain: Boolean,
     noshadow: Boolean,
+    radius: {
+      type: Boolean,
+      default: false,
+    },
     type: {
       type: String,
       default: 'default',

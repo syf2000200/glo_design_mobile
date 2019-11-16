@@ -27,4 +27,4 @@
 | name     | 图标名称  | string  | -          |    -     |
 | color    | 图标颜色  | string  | -           |    -    |
 | size    | 图标大小  | number  | -           |    -    |
-| symbol    | 是否多色（开启将以`svg`标签方式引入图标）  | boolean  | `true`,`false`          |    `true`     |
+| symbol    | 是否多色（开启将以`svg`标签方式引入图标）  | boolean  | `true`,`false` |    `true`     |

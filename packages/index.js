@@ -10,11 +10,12 @@ import GcIcon from './icon'
 import GcIndexList from './index-list'
 import GcIndexSection from './index-section'
 import GcInput from './input'
-import GcLoading from './loading'
 import GcMessageBox from './message-box/index'
 import GcNavBar from './nav-bar'
 import GcPopup from './popup'
 import GcPullDown from './pull-down'
+import GcRadio from './radio'
+import GcSearch from './search'
 import GcSwipe from './swipe'
 import GcSwipeItem from './swipe-item'
 import GcSwitch from './switch'
@@ -23,9 +24,8 @@ import GcTabContainer from './tab-container'
 import GcTabContainerItem from './tab-container-item'
 import GcTabItem from './tab-item'
 import GcTextCard from './text-card'
-import GcSearch from './search'
-import GcRadio from './radio'
-const version = '0.0.8'
+import { GcLoading, GcToast } from './toast/index'
+const version = '0.0.9'
 const components = [
   GcActionsheet,
   GcAreaSelect,
@@ -37,11 +37,12 @@ const components = [
   GcIndexList,
   GcIndexSection,
   GcInput,
-  GcLoading,
   // GcMessageBox,
   GcNavBar,
   GcPopup,
   GcPullDown,
+  GcRadio,
+  GcSearch,
   GcSwipe,
   GcSwipeItem,
   GcSwitch,
@@ -49,14 +50,14 @@ const components = [
   GcTabContainer,
   GcTabContainerItem,
   GcTabItem,
-  GcTextCard,
-  GcSearch,
-  GcRadio,
+  GcTextCard
 ]
 const install = Vue => {
   components.forEach(Component => {
     Vue.use(Component)
   })
+  Vue.prototype.GcLoading = window.GcLoading = GcLoading
+  Vue.prototype.GcToast = window.GcToast = GcToast
 };
 /* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue) {
@@ -75,11 +76,12 @@ export {
   GcIndexList,
   GcIndexSection,
   GcInput,
-  GcLoading,
   GcMessageBox,
   GcNavBar,
   GcPopup,
   GcPullDown,
+  GcRadio,
+  GcSearch,
   GcSwipe,
   GcSwipeItem,
   GcSwitch,
@@ -88,8 +90,8 @@ export {
   GcTabContainerItem,
   GcTabItem,
   GcTextCard,
-  GcSearch,
-  GcRadio,
+  GcLoading,
+  GcToast,
 }
 export default {
   install,

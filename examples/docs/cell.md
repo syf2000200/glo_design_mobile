@@ -87,5 +87,6 @@
 | title    | 设置标题  | String  | -           |    -    |
 | value    | 设置内容  | *  | -           | - |
 | label    | 设置备注信息 | string  |     -     | - |
-| is-link | 设置链接，搭配 to 属性使用 | boolean  |     -     | - |
+| is-link | 设置链接，搭配 to 属性使用 | boolean  |     true, false     | - |
 | to | 跳转链接 | String  |     -     | - |
+| full | border全屏 | Boolean  |     true, false     | false |

@@ -10,7 +10,7 @@
 .area_select_panel {
   flex: 1;
   display: flex;
-  font-size: 12px;
+  font-size: $font-size-small;
   position: absolute;
   width: 100%;
   height: calc(100% - 40px);

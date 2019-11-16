@@ -1,5 +1,5 @@
 <template>
-  <a class="gc-cell" :href="href">
+  <a class="gc-cell" :class="[{'is-full': full}]" :href="href">
     <span class="gc-cell__mask" v-if="isLink"></span>
     <div class="gc-cell__left">
       <slot name="left"></slot>
@@ -33,7 +33,7 @@
  * @module components/cell
  * @desc 单元格
  * @param {string|Object} [to] - 跳转链接，使用 vue-router 的情况下 to 会传递给 router.push，否则作为 a 标签的 href 属性处理
- * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标（传入不带前缀的图标类名，最后拼接成 .mintui-xxx）
+ * @param {string} [icon] - 图标，提供 more, back，或者自定义的图标
  * @param {string} [title] - 标题
  * @param {string} [label] - 备注信息
  * @param {boolean} [is-link=false] - 可点击的链接
@@ -57,7 +57,11 @@ export default create({
     title: String,
     label: String,
     isLink: Boolean,
-    value: {}
+    value: {},
+    full: {
+      type: Boolean,
+      default: false,
+    }
   },
   computed: {
     href () {

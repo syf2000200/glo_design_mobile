@@ -61,7 +61,7 @@ export default {
   }
 }
 .group-container {
-  text-align: center;
+  text-align: left;
   .side-nav-items {
     padding: 20px;
     background-color: #fff;

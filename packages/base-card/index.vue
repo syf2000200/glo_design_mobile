@@ -11,8 +11,6 @@
 </template>
 <script>
 import create from '../utils/create-basic'
-import VcLoading from '../loading/index.vue'
-import VcChatIcon from '../icon/index.vue'
 export default create({
   name: 'baseCard',
   props: {
@@ -34,9 +32,5 @@ export default create({
       return 'gc--' + this.sideType
     }
   },
-  components: {
-    VcLoading,
-    VcChatIcon,
-  }
 })
 </script>

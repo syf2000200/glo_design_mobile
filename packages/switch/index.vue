@@ -1,6 +1,10 @@
 <template>
   <label class="gc-switch">
-    <input class="gc-switch__input" :disabled="disabled" @change="$emit('change', currentValue)" type="checkbox" v-model="currentValue">
+    <input class="gc-switch__input" 
+    :disabled="disabled" 
+    @change="$emit('change', currentValue)" 
+    type="checkbox" 
+    v-model="currentValue">
     <span class="gc-switch__core"></span>
     <div class="gc-switch__label">
         <slot></slot>
@@ -23,7 +27,10 @@ import create from '../utils/create-basic'
 export default create({
   name: 'switch',
   props: {
-    value: Boolean,
+    value: {
+      type: Boolean,
+      default: false
+    },
     disabled: {
       type: Boolean,
       default: false

@@ -84,7 +84,7 @@ import create from '../utils/create-basic'
       },
       scrollList(y) {
         let currentItem = document.elementFromPoint(this.navOffsetX, y);
-        if (!currentItem || !currentItem.classList.contains('mint-indexlist-navitem')) {
+        if (!currentItem || !currentItem.classList.contains('gc-indexlist__navitem')) {
           return;
         }
         this.currentIndicator = currentItem.innerText;

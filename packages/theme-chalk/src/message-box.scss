@@ -7,7 +7,7 @@
     background-color: #fff;
     width: 85%;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: $font-size-large;
     -webkit-user-select: none;
     overflow: hidden;
     backface-visibility: hidden;
@@ -42,7 +42,7 @@
 }
 .gc-msgbox .gc-msgbox-errormsg {
   color: red;
-  font-size: 12px;
+  font-size: $font-size-small;
   min-height: 18px;
   margin-top: 2px;
 }
@@ -50,7 +50,7 @@
   text-align: center;
   padding-left: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: $font-size-large;
   font-weight: bold;
   color: #333;
 }

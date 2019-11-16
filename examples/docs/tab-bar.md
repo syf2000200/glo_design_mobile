@@ -89,3 +89,4 @@ import { TabBar, TabItem, Icon } from 'glo_design_mobile'
 | type    | 按钮类型  | string  | -           | default |
 | size    | 按钮尺寸 | string  |          | normal |
 | disabled | 按钮禁用 | boolean  |          | normal |
+| fixed | 浮动控制 | boolean  |     true, false     | true |
